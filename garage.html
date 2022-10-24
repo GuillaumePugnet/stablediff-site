@@ -1,0 +1,2958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my Stable Diffusion playground</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet"/>
+ </head>
+  <body>
+    <div id="stablediff">
+        <header class="sticky">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="./index.html">
+                        <h1 class="brand-logo">
+                            Stable Diff
+                        </h1>
+                    </a>
+                </div>
+                <!-- <form autocomplete="off" onsubmit="navigate();">  
+                  <div class="nes-field autocomplete">                                  
+                    <input type="text" id="garageSearch" class="nes-input" placeholder="Search ...">
+                  </div>
+                  <input type="submit" value="Search">
+                </form> -->
+            </div>
+        </header>
+      <div class="container">
+      <div class="nes-container with-title is-centered">
+        <p class="title">Stable Diffusion experiments</p>
+        <a href="./garage.html">
+            <p>The garage : I asked Stable Diffusion to generate all the cars ! Here is what I got.</p>            
+        </a>
+        Same seed for everyone : 2210230936 <br>
+        Resolution : 448x448 <br>
+        steps : 40 
+      </div>
+
+      <div class="gallery"><div class=gallery-item>
+<img src="./images/garage/abtaudiallroadquattro.webp" loading="lazy" alt="abt audi allroad quattro" /> 
+<a name=abtaudiallroadquattro.webp><p>Prompt : abt audi allroad quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias3sportback.webp" loading="lazy" alt="abt audi as3 sportback" /> 
+<a name=abtaudias3sportback.webp><p>Prompt : abt audi as3 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias3.webp" loading="lazy" alt="abt audi as3" /> 
+<a name=abtaudias3.webp><p>Prompt : abt audi as3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias4avant.webp" loading="lazy" alt="abt audi as4 avant" /> 
+<a name=abtaudias4avant.webp><p>Prompt : abt audi as4 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias4cabriolet.webp" loading="lazy" alt="abt audi as4 cabriolet" /> 
+<a name=abtaudias4cabriolet.webp><p>Prompt : abt audi as4 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias4.webp" loading="lazy" alt="abt audi as4" /> 
+<a name=abtaudias4.webp><p>Prompt : abt audi as4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias400.webp" loading="lazy" alt="abt audi as400" /> 
+<a name=abtaudias400.webp><p>Prompt : abt audi as400</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias5.webp" loading="lazy" alt="abt audi as5" /> 
+<a name=abtaudias5.webp><p>Prompt : abt audi as5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias6avant.webp" loading="lazy" alt="abt audi as6 avant" /> 
+<a name=abtaudias6avant.webp><p>Prompt : abt audi as6 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias6.webp" loading="lazy" alt="abt audi as6" /> 
+<a name=abtaudias6.webp><p>Prompt : abt audi as6</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudias8.webp" loading="lazy" alt="abt audi as8" /> 
+<a name=abtaudias8.webp><p>Prompt : abt audi as8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudiq7.webp" loading="lazy" alt="abt audi q7" /> 
+<a name=abtaudiq7.webp><p>Prompt : abt audi q7</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudir8.webp" loading="lazy" alt="abt audi r8" /> 
+<a name=abtaudir8.webp><p>Prompt : abt audi r8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudirs6avant.webp" loading="lazy" alt="abt audi rs6 avant" /> 
+<a name=abtaudirs6avant.webp><p>Prompt : abt audi rs6 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudittsportroadster.webp" loading="lazy" alt="abt audi tt sport roadster" /> 
+<a name=abtaudittsportroadster.webp><p>Prompt : abt audi tt sport roadster</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtaudittsport.webp" loading="lazy" alt="abt audi tt sport" /> 
+<a name=abtaudittsport.webp><p>Prompt : abt audi tt sport</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtauditt-limitedii.webp" loading="lazy" alt="abt audi tt-limited ii" /> 
+<a name=abtauditt-limitedii.webp><p>Prompt : abt audi tt-limited ii</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtauditt-limitedwidebody.webp" loading="lazy" alt="abt audi tt-limited wide body" /> 
+<a name=abtauditt-limitedwidebody.webp><p>Prompt : abt audi tt-limited wide body</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtauditt-limited.webp" loading="lazy" alt="abt audi tt-limited" /> 
+<a name=abtauditt-limited.webp><p>Prompt : abt audi tt-limited</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtauditt-r.webp" loading="lazy" alt="abt audi tt-r" /> 
+<a name=abtauditt-r.webp><p>Prompt : abt audi tt-r</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtauditt.webp" loading="lazy" alt="abt audi tt" /> 
+<a name=abtauditt.webp><p>Prompt : abt audi tt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtseatleon.webp" loading="lazy" alt="abt seat leon" /> 
+<a name=abtseatleon.webp><p>Prompt : abt seat leon</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtskodafabia.webp" loading="lazy" alt="abt skoda fabia" /> 
+<a name=abtskodafabia.webp><p>Prompt : abt skoda fabia</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtskodasuperb.webp" loading="lazy" alt="abt skoda superb" /> 
+<a name=abtskodasuperb.webp><p>Prompt : abt skoda superb</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwgolfgti.webp" loading="lazy" alt="abt vw golf gti" /> 
+<a name=abtvwgolfgti.webp><p>Prompt : abt vw golf gti</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwgolf.webp" loading="lazy" alt="abt vw golf" /> 
+<a name=abtvwgolf.webp><p>Prompt : abt vw golf</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwnewbeetlecabriolet.webp" loading="lazy" alt="abt vw new beetle cabriolet" /> 
+<a name=abtvwnewbeetlecabriolet.webp><p>Prompt : abt vw new beetle cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwpassat.webp" loading="lazy" alt="abt vw passat" /> 
+<a name=abtvwpassat.webp><p>Prompt : abt vw passat</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwpolo.webp" loading="lazy" alt="abt vw polo" /> 
+<a name=abtvwpolo.webp><p>Prompt : abt vw polo</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwsportingvant5.webp" loading="lazy" alt="abt vw sporting van t5" /> 
+<a name=abtvwsportingvant5.webp><p>Prompt : abt vw sporting van t5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwtouareg.webp" loading="lazy" alt="abt vw touareg" /> 
+<a name=abtvwtouareg.webp><p>Prompt : abt vw touareg</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/abtvwtouran.webp" loading="lazy" alt="abt vw touran" /> 
+<a name=abtvwtouran.webp><p>Prompt : abt vw touran</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzer99dconcept.webp" loading="lazy" alt="ac schnitzer 99d concept" /> 
+<a name=acschnitzer99dconcept.webp><p>Prompt : ac schnitzer 99d concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracl2concept.webp" loading="lazy" alt="ac schnitzer acl2 concept" /> 
+<a name=acschnitzeracl2concept.webp><p>Prompt : ac schnitzer acl2 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs11-seriescabrio.webp" loading="lazy" alt="ac schnitzer acs1 1-series cabrio" /> 
+<a name=acschnitzeracs11-seriescabrio.webp><p>Prompt : ac schnitzer acs1 1-series cabrio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs11seriese87.webp" loading="lazy" alt="ac schnitzer acs1 1series e87" /> 
+<a name=acschnitzeracs11seriese87.webp><p>Prompt : ac schnitzer acs1 1series e87</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs1bmw1-seriescoupe.webp" loading="lazy" alt="ac schnitzer acs1 bmw 1-series coupe" /> 
+<a name=acschnitzeracs1bmw1-seriescoupe.webp><p>Prompt : ac schnitzer acs1 bmw 1-series coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33-seriese92coupe.webp" loading="lazy" alt="ac schnitzer acs3 3-series e92 coupe" /> 
+<a name=acschnitzeracs33-seriese92coupe.webp><p>Prompt : ac schnitzer acs3 3-series e92 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33-seriese93cabrio.webp" loading="lazy" alt="ac schnitzer acs3 3-series e93 cabrio" /> 
+<a name=acschnitzeracs33-seriese93cabrio.webp><p>Prompt : ac schnitzer acs3 3-series e93 cabrio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese46compact.webp" loading="lazy" alt="ac schnitzer acs3 3series e46 compact" /> 
+<a name=acschnitzeracs33seriese46compact.webp><p>Prompt : ac schnitzer acs3 3series e46 compact</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese46convertible.webp" loading="lazy" alt="ac schnitzer acs3 3series e46 convertible" /> 
+<a name=acschnitzeracs33seriese46convertible.webp><p>Prompt : ac schnitzer acs3 3series e46 convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese46coupe.webp" loading="lazy" alt="ac schnitzer acs3 3series e46 coupe" /> 
+<a name=acschnitzeracs33seriese46coupe.webp><p>Prompt : ac schnitzer acs3 3series e46 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese46m3sport.webp" loading="lazy" alt="ac schnitzer acs3 3series e46 m3 sport" /> 
+<a name=acschnitzeracs33seriese46m3sport.webp><p>Prompt : ac schnitzer acs3 3series e46 m3 sport</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese46touring.webp" loading="lazy" alt="ac schnitzer acs3 3series e46 touring" /> 
+<a name=acschnitzeracs33seriese46touring.webp><p>Prompt : ac schnitzer acs3 3series e46 touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese46.webp" loading="lazy" alt="ac schnitzer acs3 3series e46" /> 
+<a name=acschnitzeracs33seriese46.webp><p>Prompt : ac schnitzer acs3 3series e46</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese90.webp" loading="lazy" alt="ac schnitzer acs3 3series e90" /> 
+<a name=acschnitzeracs33seriese90.webp><p>Prompt : ac schnitzer acs3 3series e90</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs33seriese91touring.webp" loading="lazy" alt="ac schnitzer acs3 3series e91 touring" /> 
+<a name=acschnitzeracs33seriese91touring.webp><p>Prompt : ac schnitzer acs3 3series e91 touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs3sportbmwm3.webp" loading="lazy" alt="ac schnitzer acs3 sport bmw m3" /> 
+<a name=acschnitzeracs3sportbmwm3.webp><p>Prompt : ac schnitzer acs3 sport bmw m3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs3x3.webp" loading="lazy" alt="ac schnitzer acs3 x3" /> 
+<a name=acschnitzeracs3x3.webp><p>Prompt : ac schnitzer acs3 x3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs4z4mroadster.webp" loading="lazy" alt="ac schnitzer acs4 z4 m roadster" /> 
+<a name=acschnitzeracs4z4mroadster.webp><p>Prompt : ac schnitzer acs4 z4 m roadster</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs4z4sportcoupe.webp" loading="lazy" alt="ac schnitzer acs4 z4 sport coupe" /> 
+<a name=acschnitzeracs4z4sportcoupe.webp><p>Prompt : ac schnitzer acs4 z4 sport coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs4z4.webp" loading="lazy" alt="ac schnitzer acs4 z4" /> 
+<a name=acschnitzeracs4z4.webp><p>Prompt : ac schnitzer acs4 z4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs55seriese39m5.webp" loading="lazy" alt="ac schnitzer acs5 5series e39 m5" /> 
+<a name=acschnitzeracs55seriese39m5.webp><p>Prompt : ac schnitzer acs5 5series e39 m5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs55seriese39touring.webp" loading="lazy" alt="ac schnitzer acs5 5series e39 touring" /> 
+<a name=acschnitzeracs55seriese39touring.webp><p>Prompt : ac schnitzer acs5 5series e39 touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs55seriese39.webp" loading="lazy" alt="ac schnitzer acs5 5series e39" /> 
+<a name=acschnitzeracs55seriese39.webp><p>Prompt : ac schnitzer acs5 5series e39</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs55seriese60.webp" loading="lazy" alt="ac schnitzer acs5 5series e60" /> 
+<a name=acschnitzeracs55seriese60.webp><p>Prompt : ac schnitzer acs5 5series e60</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs55seriese61touring.webp" loading="lazy" alt="ac schnitzer acs5 5series e61 touring" /> 
+<a name=acschnitzeracs55seriese61touring.webp><p>Prompt : ac schnitzer acs5 5series e61 touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs5sportm5e60.webp" loading="lazy" alt="ac schnitzer acs5 sport m5 e60" /> 
+<a name=acschnitzeracs5sportm5e60.webp><p>Prompt : ac schnitzer acs5 sport m5 e60</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs5sportsconcept.webp" loading="lazy" alt="ac schnitzer acs5 sport s concept" /> 
+<a name=acschnitzeracs5sportsconcept.webp><p>Prompt : ac schnitzer acs5 sport s concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs66seriese63coupe.webp" loading="lazy" alt="ac schnitzer acs6 6series e63 coupe" /> 
+<a name=acschnitzeracs66seriese63coupe.webp><p>Prompt : ac schnitzer acs6 6series e63 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs66seriese64convertible.webp" loading="lazy" alt="ac schnitzer acs6 6series e64 convertible" /> 
+<a name=acschnitzeracs66seriese64convertible.webp><p>Prompt : ac schnitzer acs6 6series e64 convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs6sportm6.webp" loading="lazy" alt="ac schnitzer acs6 sport m6" /> 
+<a name=acschnitzeracs6sportm6.webp><p>Prompt : ac schnitzer acs6 sport m6</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzeracs77seriese65.webp" loading="lazy" alt="ac schnitzer acs7 7series e65" /> 
+<a name=acschnitzeracs77seriese65.webp><p>Prompt : ac schnitzer acs7 7series e65</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerbmwm3cabrio.webp" loading="lazy" alt="ac schnitzer bmw m3 cabrio" /> 
+<a name=acschnitzerbmwm3cabrio.webp><p>Prompt : ac schnitzer bmw m3 cabrio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerbmwx1.webp" loading="lazy" alt="ac schnitzer bmw x1" /> 
+<a name=acschnitzerbmwx1.webp><p>Prompt : ac schnitzer bmw x1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerbmwx5falcon.webp" loading="lazy" alt="ac schnitzer bmw x5 falcon" /> 
+<a name=acschnitzerbmwx5falcon.webp><p>Prompt : ac schnitzer bmw x5 falcon</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerbmwx6falcon.webp" loading="lazy" alt="ac schnitzer bmw x6 falcon" /> 
+<a name=acschnitzerbmwx6falcon.webp><p>Prompt : ac schnitzer bmw x6 falcon</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerbmwx6m.webp" loading="lazy" alt="ac schnitzer bmw x6 m" /> 
+<a name=acschnitzerbmwx6m.webp><p>Prompt : ac schnitzer bmw x6 m</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerbmwz4profileconcept.webp" loading="lazy" alt="ac schnitzer bmw z4 profile concept" /> 
+<a name=acschnitzerbmwz4profileconcept.webp><p>Prompt : ac schnitzer bmw z4 profile concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzergp3.10concept.webp" loading="lazy" alt="ac schnitzer gp3.10 concept" /> 
+<a name=acschnitzergp3.10concept.webp><p>Prompt : ac schnitzer gp3.10 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerminicoopercovertible.webp" loading="lazy" alt="ac schnitzer mini cooper covertible" /> 
+<a name=acschnitzerminicoopercovertible.webp><p>Prompt : ac schnitzer mini cooper covertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerminicooperr56.webp" loading="lazy" alt="ac schnitzer mini cooper r56" /> 
+<a name=acschnitzerminicooperr56.webp><p>Prompt : ac schnitzer mini cooper r56</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerminicoopers.webp" loading="lazy" alt="ac schnitzer mini coopers" /> 
+<a name=acschnitzerminicoopers.webp><p>Prompt : ac schnitzer mini coopers</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzermini.webp" loading="lazy" alt="ac schnitzer mini" /> 
+<a name=acschnitzermini.webp><p>Prompt : ac schnitzer mini</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzertensionm6concept.webp" loading="lazy" alt="ac schnitzer tension m6 concept" /> 
+<a name=acschnitzertensionm6concept.webp><p>Prompt : ac schnitzer tension m6 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzertensionstreetversion.webp" loading="lazy" alt="ac schnitzer tension street version" /> 
+<a name=acschnitzertensionstreetversion.webp><p>Prompt : ac schnitzer tension street version</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzertopster.webp" loading="lazy" alt="ac schnitzer topster" /> 
+<a name=acschnitzertopster.webp><p>Prompt : ac schnitzer topster</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerx-road.webp" loading="lazy" alt="ac schnitzer x-road" /> 
+<a name=acschnitzerx-road.webp><p>Prompt : ac schnitzer x-road</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/acschnitzerx5e53.webp" loading="lazy" alt="ac schnitzer x5 e53" /> 
+<a name=acschnitzerx5e53.webp><p>Prompt : ac schnitzer x5 e53</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo145.webp" loading="lazy" alt="alfa romeo 145" /> 
+<a name=alfaromeo145.webp><p>Prompt : alfa romeo 145</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo146.webp" loading="lazy" alt="alfa romeo 146" /> 
+<a name=alfaromeo146.webp><p>Prompt : alfa romeo 146</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo1473door.webp" loading="lazy" alt="alfa romeo 147 3door" /> 
+<a name=alfaromeo1473door.webp><p>Prompt : alfa romeo 147 3door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo1475door.webp" loading="lazy" alt="alfa romeo 147 5door" /> 
+<a name=alfaromeo1475door.webp><p>Prompt : alfa romeo 147 5door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147cnc.webp" loading="lazy" alt="alfa romeo 147 cnc" /> 
+<a name=alfaromeo147cnc.webp><p>Prompt : alfa romeo 147 cnc</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147gta.webp" loading="lazy" alt="alfa romeo 147 gta" /> 
+<a name=alfaromeo147gta.webp><p>Prompt : alfa romeo 147 gta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147jtd16v.webp" loading="lazy" alt="alfa romeo 147 jtd 16v" /> 
+<a name=alfaromeo147jtd16v.webp><p>Prompt : alfa romeo 147 jtd 16v</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147murphyandnye.webp" loading="lazy" alt="alfa romeo 147 murphy and nye" /> 
+<a name=alfaromeo147murphyandnye.webp><p>Prompt : alfa romeo 147 murphy and nye</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147q2.webp" loading="lazy" alt="alfa romeo 147 q2" /> 
+<a name=alfaromeo147q2.webp><p>Prompt : alfa romeo 147 q2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147ti.webp" loading="lazy" alt="alfa romeo 147 ti" /> 
+<a name=alfaromeo147ti.webp><p>Prompt : alfa romeo 147 ti</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo147.webp" loading="lazy" alt="alfa romeo 147" /> 
+<a name=alfaromeo147.webp><p>Prompt : alfa romeo 147</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo1552.5v6tidtm.webp" loading="lazy" alt="alfa romeo 155 2.5 v6 ti dtm" /> 
+<a name=alfaromeo1552.5v6tidtm.webp><p>Prompt : alfa romeo 155 2.5 v6 ti dtm</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo155.webp" loading="lazy" alt="alfa romeo 155" /> 
+<a name=alfaromeo155.webp><p>Prompt : alfa romeo 155</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo1562.4jtd.webp" loading="lazy" alt="alfa romeo 156 2.4 jtd" /> 
+<a name=alfaromeo1562.4jtd.webp><p>Prompt : alfa romeo 156 2.4 jtd</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo156crosswagonq4.webp" loading="lazy" alt="alfa romeo 156 crosswagon q4" /> 
+<a name=alfaromeo156crosswagonq4.webp><p>Prompt : alfa romeo 156 crosswagon q4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo156crosswagon.webp" loading="lazy" alt="alfa romeo 156 crosswagon" /> 
+<a name=alfaromeo156crosswagon.webp><p>Prompt : alfa romeo 156 crosswagon</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo156gtaautodelta.webp" loading="lazy" alt="alfa romeo 156 gta autodelta" /> 
+<a name=alfaromeo156gtaautodelta.webp><p>Prompt : alfa romeo 156 gta autodelta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo156sportwagon2.0jtd.webp" loading="lazy" alt="alfa romeo 156 sportwagon 2.0 jtd" /> 
+<a name=alfaromeo156sportwagon2.0jtd.webp><p>Prompt : alfa romeo 156 sportwagon 2.0 jtd</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo156.webp" loading="lazy" alt="alfa romeo 156" /> 
+<a name=alfaromeo156.webp><p>Prompt : alfa romeo 156</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo158.webp" loading="lazy" alt="alfa romeo 158" /> 
+<a name=alfaromeo158.webp><p>Prompt : alfa romeo 158</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo1591750tbi.webp" loading="lazy" alt="alfa romeo 159 1750 tbi" /> 
+<a name=alfaromeo1591750tbi.webp><p>Prompt : alfa romeo 159 1750 tbi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo159sportwagon.webp" loading="lazy" alt="alfa romeo 159 sportwagon" /> 
+<a name=alfaromeo159sportwagon.webp><p>Prompt : alfa romeo 159 sportwagon</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo159.webp" loading="lazy" alt="alfa romeo 159" /> 
+<a name=alfaromeo159.webp><p>Prompt : alfa romeo 159</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo164proteoconcept.webp" loading="lazy" alt="alfa romeo 164 proteo concept" /> 
+<a name=alfaromeo164proteoconcept.webp><p>Prompt : alfa romeo 164 proteo concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo164.webp" loading="lazy" alt="alfa romeo 164" /> 
+<a name=alfaromeo164.webp><p>Prompt : alfa romeo 164</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo166.webp" loading="lazy" alt="alfa romeo 166" /> 
+<a name=alfaromeo166.webp><p>Prompt : alfa romeo 166</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo182tformula1.webp" loading="lazy" alt="alfa romeo 182 t formula 1" /> 
+<a name=alfaromeo182tformula1.webp><p>Prompt : alfa romeo 182 t formula 1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo1900.webp" loading="lazy" alt="alfa romeo 1900" /> 
+<a name=alfaromeo1900.webp><p>Prompt : alfa romeo 1900</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo2.0itsformula3.webp" loading="lazy" alt="alfa romeo 2.0i ts formula 3" /> 
+<a name=alfaromeo2.0itsformula3.webp><p>Prompt : alfa romeo 2.0i ts formula 3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo2000berlina.webp" loading="lazy" alt="alfa romeo 2000 berlina" /> 
+<a name=alfaromeo2000berlina.webp><p>Prompt : alfa romeo 2000 berlina</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo2000sportspider.webp" loading="lazy" alt="alfa romeo 2000 sport spider" /> 
+<a name=alfaromeo2000sportspider.webp><p>Prompt : alfa romeo 2000 sport spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo2600spider.webp" loading="lazy" alt="alfa romeo 2600 spider" /> 
+<a name=alfaromeo2600spider.webp><p>Prompt : alfa romeo 2600 spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo2uettottantaconcept.webp" loading="lazy" alt="alfa romeo 2uettottanta concept" /> 
+<a name=alfaromeo2uettottantaconcept.webp><p>Prompt : alfa romeo 2uettottanta concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo331.54x4.webp" loading="lazy" alt="alfa romeo 33 1.5 4x4" /> 
+<a name=alfaromeo331.54x4.webp><p>Prompt : alfa romeo 33 1.5 4x4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo331.5giardinetta4x4.webp" loading="lazy" alt="alfa romeo 33 1.5 giardinetta 4x4" /> 
+<a name=alfaromeo331.5giardinetta4x4.webp><p>Prompt : alfa romeo 33 1.5 giardinetta 4x4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo412.webp" loading="lazy" alt="alfa romeo 412" /> 
+<a name=alfaromeo412.webp><p>Prompt : alfa romeo 412</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4cconcept.webp" loading="lazy" alt="alfa romeo 4c concept" /> 
+<a name=alfaromeo4cconcept.webp><p>Prompt : alfa romeo 4c concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4ccoupe[us].webp" loading="lazy" alt="alfa romeo 4c coupe [us]" /> 
+<a name=alfaromeo4ccoupe[us].webp><p>Prompt : alfa romeo 4c coupe [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4cspider33stradaletributo.webp" loading="lazy" alt="alfa romeo 4c spider 33 stradale tributo" /> 
+<a name=alfaromeo4cspider33stradaletributo.webp><p>Prompt : alfa romeo 4c spider 33 stradale tributo</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4cspiderconcept.webp" loading="lazy" alt="alfa romeo 4c spider concept" /> 
+<a name=alfaromeo4cspiderconcept.webp><p>Prompt : alfa romeo 4c spider concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4cspider.webp" loading="lazy" alt="alfa romeo 4c spider" /> 
+<a name=alfaromeo4cspider.webp><p>Prompt : alfa romeo 4c spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4c[uk].webp" loading="lazy" alt="alfa romeo 4c [uk]" /> 
+<a name=alfaromeo4c[uk].webp><p>Prompt : alfa romeo 4c [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo4c.webp" loading="lazy" alt="alfa romeo 4c" /> 
+<a name=alfaromeo4c.webp><p>Prompt : alfa romeo 4c</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo6c1500sport.webp" loading="lazy" alt="alfa romeo 6c 1500 sport" /> 
+<a name=alfaromeo6c1500sport.webp><p>Prompt : alfa romeo 6c 1500 sport</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo6c2300millemiglia.webp" loading="lazy" alt="alfa romeo 6c 2300 mille miglia" /> 
+<a name=alfaromeo6c2300millemiglia.webp><p>Prompt : alfa romeo 6c 2300 mille miglia</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo6c2300villadeste.webp" loading="lazy" alt="alfa romeo 6c 2300 villa deste" /> 
+<a name=alfaromeo6c2300villadeste.webp><p>Prompt : alfa romeo 6c 2300 villa deste</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo751.8iturboevoluzione.webp" loading="lazy" alt="alfa romeo 75 1.8i turbo evoluzione" /> 
+<a name=alfaromeo751.8iturboevoluzione.webp><p>Prompt : alfa romeo 75 1.8i turbo evoluzione</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo751.8iturbotcc.webp" loading="lazy" alt="alfa romeo 75 1.8i turbo tcc" /> 
+<a name=alfaromeo751.8iturbotcc.webp><p>Prompt : alfa romeo 75 1.8i turbo tcc</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo751.8iturbo.webp" loading="lazy" alt="alfa romeo 75 1.8i turbo" /> 
+<a name=alfaromeo751.8iturbo.webp><p>Prompt : alfa romeo 75 1.8i turbo</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo75.webp" loading="lazy" alt="alfa romeo 75" /> 
+<a name=alfaromeo75.webp><p>Prompt : alfa romeo 75</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo750competizione.webp" loading="lazy" alt="alfa romeo 750 competizione" /> 
+<a name=alfaromeo750competizione.webp><p>Prompt : alfa romeo 750 competizione</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo8c2300.webp" loading="lazy" alt="alfa romeo 8c 2300" /> 
+<a name=alfaromeo8c2300.webp><p>Prompt : alfa romeo 8c 2300</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo8ccompetizione.webp" loading="lazy" alt="alfa romeo 8c competizione" /> 
+<a name=alfaromeo8ccompetizione.webp><p>Prompt : alfa romeo 8c competizione</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeo8cspider.webp" loading="lazy" alt="alfa romeo 8c spider" /> 
+<a name=alfaromeo8cspider.webp><p>Prompt : alfa romeo 8c spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfa6.webp" loading="lazy" alt="alfa romeo alfa 6" /> 
+<a name=alfaromeoalfa6.webp><p>Prompt : alfa romeo alfa 6</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfasud1.2.webp" loading="lazy" alt="alfa romeo alfasud 1.2" /> 
+<a name=alfaromeoalfasud1.2.webp><p>Prompt : alfa romeo alfasud 1.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfasudsprint1.5veloce.webp" loading="lazy" alt="alfa romeo alfasud sprint 1.5 veloce" /> 
+<a name=alfaromeoalfasudsprint1.5veloce.webp><p>Prompt : alfa romeo alfasud sprint 1.5 veloce</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfasudsprintgrandprix.webp" loading="lazy" alt="alfa romeo alfasud sprint grand prix" /> 
+<a name=alfaromeoalfasudsprintgrandprix.webp><p>Prompt : alfa romeo alfasud sprint grand prix</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfasudsprintquadrifoglioverde.webp" loading="lazy" alt="alfa romeo alfasud sprint quadrifoglio verde" /> 
+<a name=alfaromeoalfasudsprintquadrifoglioverde.webp><p>Prompt : alfa romeo alfasud sprint quadrifoglio verde</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfetta2.0.webp" loading="lazy" alt="alfa romeo alfetta 2.0" /> 
+<a name=alfaromeoalfetta2.0.webp><p>Prompt : alfa romeo alfetta 2.0</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfettagtv2.0.webp" loading="lazy" alt="alfa romeo alfetta gtv 2.0" /> 
+<a name=alfaromeoalfettagtv2.0.webp><p>Prompt : alfa romeo alfetta gtv 2.0</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoalfettagtv62.5i.webp" loading="lazy" alt="alfa romeo alfetta gtv 6 2.5i" /> 
+<a name=alfaromeoalfettagtv62.5i.webp><p>Prompt : alfa romeo alfetta gtv 6 2.5i</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoarna.webp" loading="lazy" alt="alfa romeo arna" /> 
+<a name=alfaromeoarna.webp><p>Prompt : alfa romeo arna</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeobrabhamformula1.webp" loading="lazy" alt="alfa romeo brabham formula 1" /> 
+<a name=alfaromeobrabhamformula1.webp><p>Prompt : alfa romeo brabham formula 1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeobreras.webp" loading="lazy" alt="alfa romeo brera s" /> 
+<a name=alfaromeobreras.webp><p>Prompt : alfa romeo brera s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeobrera[uk].webp" loading="lazy" alt="alfa romeo brera [uk]" /> 
+<a name=alfaromeobrera[uk].webp><p>Prompt : alfa romeo brera [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeobrera.webp" loading="lazy" alt="alfa romeo brera" /> 
+<a name=alfaromeobrera.webp><p>Prompt : alfa romeo brera</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoc52discovolante2000spider.webp" loading="lazy" alt="alfa romeo c 52 disco volante 2000 spider" /> 
+<a name=alfaromeoc52discovolante2000spider.webp><p>Prompt : alfa romeo c 52 disco volante 2000 spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeodiscovolantespydertouring.webp" loading="lazy" alt="alfa romeo disco volante spyder touring" /> 
+<a name=alfaromeodiscovolantespydertouring.webp><p>Prompt : alfa romeo disco volante spyder touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeodiscovolantetouringconcept.webp" loading="lazy" alt="alfa romeo disco volante touring concept" /> 
+<a name=alfaromeodiscovolantetouringconcept.webp><p>Prompt : alfa romeo disco volante touring concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeodiscovolantetouring.webp" loading="lazy" alt="alfa romeo disco volante touring" /> 
+<a name=alfaromeodiscovolantetouring.webp><p>Prompt : alfa romeo disco volante touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliaberlina.webp" loading="lazy" alt="alfa romeo giulia berlina" /> 
+<a name=alfaromeogiuliaberlina.webp><p>Prompt : alfa romeo giulia berlina</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliacoupe1300gtjunior.webp" loading="lazy" alt="alfa romeo giulia coupe 1300 gt junior" /> 
+<a name=alfaromeogiuliacoupe1300gtjunior.webp><p>Prompt : alfa romeo giulia coupe 1300 gt junior</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliacoupe1300gtajunior.webp" loading="lazy" alt="alfa romeo giulia coupe 1300 gta junior" /> 
+<a name=alfaromeogiuliacoupe1300gtajunior.webp><p>Prompt : alfa romeo giulia coupe 1300 gta junior</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliacoupegtjuniorz.webp" loading="lazy" alt="alfa romeo giulia coupe gt junior z" /> 
+<a name=alfaromeogiuliacoupegtjuniorz.webp><p>Prompt : alfa romeo giulia coupe gt junior z</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliagta.webp" loading="lazy" alt="alfa romeo giulia gta" /> 
+<a name=alfaromeogiuliagta.webp><p>Prompt : alfa romeo giulia gta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliaquadrifogliocarabinieri.webp" loading="lazy" alt="alfa romeo giulia quadrifoglio carabinieri" /> 
+<a name=alfaromeogiuliaquadrifogliocarabinieri.webp><p>Prompt : alfa romeo giulia quadrifoglio carabinieri</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliaquadrifoglio.webp" loading="lazy" alt="alfa romeo giulia quadrifoglio" /> 
+<a name=alfaromeogiuliaquadrifoglio.webp><p>Prompt : alfa romeo giulia quadrifoglio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliaveloce.webp" loading="lazy" alt="alfa romeo giulia veloce" /> 
+<a name=alfaromeogiuliaveloce.webp><p>Prompt : alfa romeo giulia veloce</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiulia.webp" loading="lazy" alt="alfa romeo giulia" /> 
+<a name=alfaromeogiulia.webp><p>Prompt : alfa romeo giulia</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiulietta2.0turbodelta.webp" loading="lazy" alt="alfa romeo giulietta 2.0 turbodelta" /> 
+<a name=alfaromeogiulietta2.0turbodelta.webp><p>Prompt : alfa romeo giulietta 2.0 turbodelta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliettaberlina.webp" loading="lazy" alt="alfa romeo giulietta berlina" /> 
+<a name=alfaromeogiuliettaberlina.webp><p>Prompt : alfa romeo giulietta berlina</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliettaquadrifoglioverde.webp" loading="lazy" alt="alfa romeo giulietta quadrifoglio verde" /> 
+<a name=alfaromeogiuliettaquadrifoglioverde.webp><p>Prompt : alfa romeo giulietta quadrifoglio verde</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliettaspider.webp" loading="lazy" alt="alfa romeo giulietta spider" /> 
+<a name=alfaromeogiuliettaspider.webp><p>Prompt : alfa romeo giulietta spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliettasprint.webp" loading="lazy" alt="alfa romeo giulietta sprint" /> 
+<a name=alfaromeogiuliettasprint.webp><p>Prompt : alfa romeo giulietta sprint</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiuliettasz.webp" loading="lazy" alt="alfa romeo giulietta sz" /> 
+<a name=alfaromeogiuliettasz.webp><p>Prompt : alfa romeo giulietta sz</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogiulietta.webp" loading="lazy" alt="alfa romeo giulietta" /> 
+<a name=alfaromeogiulietta.webp><p>Prompt : alfa romeo giulietta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogloriaconcept.webp" loading="lazy" alt="alfa romeo gloria concept" /> 
+<a name=alfaromeogloriaconcept.webp><p>Prompt : alfa romeo gloria concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogtq2.webp" loading="lazy" alt="alfa romeo gt q2" /> 
+<a name=alfaromeogtq2.webp><p>Prompt : alfa romeo gt q2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogt.webp" loading="lazy" alt="alfa romeo gt" /> 
+<a name=alfaromeogt.webp><p>Prompt : alfa romeo gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeogtv.webp" loading="lazy" alt="alfa romeo gtv" /> 
+<a name=alfaromeogtv.webp><p>Prompt : alfa romeo gtv</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeokamalconcept.webp" loading="lazy" alt="alfa romeo kamal concept" /> 
+<a name=alfaromeokamalconcept.webp><p>Prompt : alfa romeo kamal concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeomi.to.webp" loading="lazy" alt="alfa romeo mi.to" /> 
+<a name=alfaromeomi.to.webp><p>Prompt : alfa romeo mi.to</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeomito1.4multiair.webp" loading="lazy" alt="alfa romeo mito 1.4 multiair" /> 
+<a name=alfaromeomito1.4multiair.webp><p>Prompt : alfa romeo mito 1.4 multiair</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeomitogtaconcept.webp" loading="lazy" alt="alfa romeo mito gta concept" /> 
+<a name=alfaromeomitogtaconcept.webp><p>Prompt : alfa romeo mito gta concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeomitoquadrifoglioverde.webp" loading="lazy" alt="alfa romeo mito quadrifoglio verde" /> 
+<a name=alfaromeomitoquadrifoglioverde.webp><p>Prompt : alfa romeo mito quadrifoglio verde</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeomito.webp" loading="lazy" alt="alfa romeo mito" /> 
+<a name=alfaromeomito.webp><p>Prompt : alfa romeo mito</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeomontreal.webp" loading="lazy" alt="alfa romeo montreal" /> 
+<a name=alfaromeomontreal.webp><p>Prompt : alfa romeo montreal</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeonuvolaconcept.webp" loading="lazy" alt="alfa romeo nuvola concept" /> 
+<a name=alfaromeonuvolaconcept.webp><p>Prompt : alfa romeo nuvola concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeop2.webp" loading="lazy" alt="alfa romeo p2" /> 
+<a name=alfaromeop2.webp><p>Prompt : alfa romeo p2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeopandionconcept.webp" loading="lazy" alt="alfa romeo pandion concept" /> 
+<a name=alfaromeopandionconcept.webp><p>Prompt : alfa romeo pandion concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeorl.webp" loading="lazy" alt="alfa romeo rl" /> 
+<a name=alfaromeorl.webp><p>Prompt : alfa romeo rl</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeormsport.webp" loading="lazy" alt="alfa romeo rm sport" /> 
+<a name=alfaromeormsport.webp><p>Prompt : alfa romeo rm sport</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeorz.webp" loading="lazy" alt="alfa romeo rz" /> 
+<a name=alfaromeorz.webp><p>Prompt : alfa romeo rz</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeoscarabeoconcept.webp" loading="lazy" alt="alfa romeo scarabeo concept" /> 
+<a name=alfaromeoscarabeoconcept.webp><p>Prompt : alfa romeo scarabeo concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeospider.webp" loading="lazy" alt="alfa romeo spider" /> 
+<a name=alfaromeospider.webp><p>Prompt : alfa romeo spider</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeostelvioquadrifoglio.webp" loading="lazy" alt="alfa romeo stelvio quadrifoglio" /> 
+<a name=alfaromeostelvioquadrifoglio.webp><p>Prompt : alfa romeo stelvio quadrifoglio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeostelvioveloceti.webp" loading="lazy" alt="alfa romeo stelvio veloce ti" /> 
+<a name=alfaromeostelvioveloceti.webp><p>Prompt : alfa romeo stelvio veloce ti</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeostelvio.webp" loading="lazy" alt="alfa romeo stelvio" /> 
+<a name=alfaromeostelvio.webp><p>Prompt : alfa romeo stelvio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeotipo158alfetta.webp" loading="lazy" alt="alfa romeo tipo 158 alfetta" /> 
+<a name=alfaromeotipo158alfetta.webp><p>Prompt : alfa romeo tipo 158 alfetta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeotipo159alfetta.webp" loading="lazy" alt="alfa romeo tipo 159 alfetta" /> 
+<a name=alfaromeotipo159alfetta.webp><p>Prompt : alfa romeo tipo 159 alfetta</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeotonaleconcept.webp" loading="lazy" alt="alfa romeo tonale concept" /> 
+<a name=alfaromeotonaleconcept.webp><p>Prompt : alfa romeo tonale concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeotonale.webp" loading="lazy" alt="alfa romeo tonale" /> 
+<a name=alfaromeotonale.webp><p>Prompt : alfa romeo tonale</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeotz3corsa.webp" loading="lazy" alt="alfa romeo tz3 corsa" /> 
+<a name=alfaromeotz3corsa.webp><p>Prompt : alfa romeo tz3 corsa</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeotz3stradale.webp" loading="lazy" alt="alfa romeo tz3 stradale" /> 
+<a name=alfaromeotz3stradale.webp><p>Prompt : alfa romeo tz3 stradale</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alfaromeovisconticonceptitaldesign.webp" loading="lazy" alt="alfa romeo visconti concept italdesign" /> 
+<a name=alfaromeovisconticonceptitaldesign.webp><p>Prompt : alfa romeo visconti concept italdesign</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110cupracecar.webp" loading="lazy" alt="alpine a110 cup racecar" /> 
+<a name=alpinea110cupracecar.webp><p>Prompt : alpine a110 cup racecar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110gt.webp" loading="lazy" alt="alpine a110 gt" /> 
+<a name=alpinea110gt.webp><p>Prompt : alpine a110 gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110rally.webp" loading="lazy" alt="alpine a110 rally" /> 
+<a name=alpinea110rally.webp><p>Prompt : alpine a110 rally</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110s.webp" loading="lazy" alt="alpine a110 s" /> 
+<a name=alpinea110s.webp><p>Prompt : alpine a110 s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110sportsxconcept.webp" loading="lazy" alt="alpine a110 sportsx concept" /> 
+<a name=alpinea110sportsxconcept.webp><p>Prompt : alpine a110 sportsx concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110.webp" loading="lazy" alt="alpine a110" /> 
+<a name=alpinea110.webp><p>Prompt : alpine a110</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea110s.webp" loading="lazy" alt="alpine a110s" /> 
+<a name=alpinea110s.webp><p>Prompt : alpine a110s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinea4810byiedconcept.webp" loading="lazy" alt="alpine a4810 by ied concept" /> 
+<a name=alpinea4810byiedconcept.webp><p>Prompt : alpine a4810 by ied concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinecelebrationconcept.webp" loading="lazy" alt="alpine celebration concept" /> 
+<a name=alpinecelebrationconcept.webp><p>Prompt : alpine celebration concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinevisionconcept.webp" loading="lazy" alt="alpine vision concept" /> 
+<a name=alpinevisionconcept.webp><p>Prompt : alpine vision concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/alpinevisiongranturismoconcept.webp" loading="lazy" alt="alpine vision gran turismo concept" /> 
+<a name=alpinevisiongranturismoconcept.webp><p>Prompt : alpine vision gran turismo concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/apexap-0concept.webp" loading="lazy" alt="apex ap-0 concept" /> 
+<a name=apexap-0concept.webp><p>Prompt : apex ap-0 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/arrinerasupercar.webp" loading="lazy" alt="arrinera supercar" /> 
+<a name=arrinerasupercar.webp><p>Prompt : arrinera supercar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/ascaria10.webp" loading="lazy" alt="ascari a10" /> 
+<a name=ascaria10.webp><p>Prompt : ascari a10</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi100avantquattro.webp" loading="lazy" alt="audi 100 avant quattro" /> 
+<a name=audi100avantquattro.webp><p>Prompt : audi 100 avant quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi100avant.webp" loading="lazy" alt="audi 100 avant" /> 
+<a name=audi100avant.webp><p>Prompt : audi 100 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi100.webp" loading="lazy" alt="audi 100" /> 
+<a name=audi100.webp><p>Prompt : audi 100</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi200avant.webp" loading="lazy" alt="audi 200 avant" /> 
+<a name=audi200avant.webp><p>Prompt : audi 200 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi200.webp" loading="lazy" alt="audi 200" /> 
+<a name=audi200.webp><p>Prompt : audi 200</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi80avant.webp" loading="lazy" alt="audi 80 avant" /> 
+<a name=audi80avant.webp><p>Prompt : audi 80 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi80gt.webp" loading="lazy" alt="audi 80 gt" /> 
+<a name=audi80gt.webp><p>Prompt : audi 80 gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi90quattro.webp" loading="lazy" alt="audi 90 quattro" /> 
+<a name=audi90quattro.webp><p>Prompt : audi 90 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audi90.webp" loading="lazy" alt="audi 90" /> 
+<a name=audi90.webp><p>Prompt : audi 90</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1amplified.webp" loading="lazy" alt="audi a1 amplified" /> 
+<a name=audia1amplified.webp><p>Prompt : audi a1 amplified</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1citycarver.webp" loading="lazy" alt="audi a1 citycarver" /> 
+<a name=audia1citycarver.webp><p>Prompt : audi a1 citycarver</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1clubsportquattroconcept.webp" loading="lazy" alt="audi a1 clubsport quattro concept" /> 
+<a name=audia1clubsportquattroconcept.webp><p>Prompt : audi a1 clubsport quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1e-tronconcept.webp" loading="lazy" alt="audi a1 e-tron concept" /> 
+<a name=audia1e-tronconcept.webp><p>Prompt : audi a1 e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1quattro.webp" loading="lazy" alt="audi a1 quattro" /> 
+<a name=audia1quattro.webp><p>Prompt : audi a1 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1sportbackconcept.webp" loading="lazy" alt="audi a1 sportback concept" /> 
+<a name=audia1sportbackconcept.webp><p>Prompt : audi a1 sportback concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1sportback.webp" loading="lazy" alt="audi a1 sportback" /> 
+<a name=audia1sportback.webp><p>Prompt : audi a1 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia1.webp" loading="lazy" alt="audi a1" /> 
+<a name=audia1.webp><p>Prompt : audi a1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia2concept.webp" loading="lazy" alt="audi a2 concept" /> 
+<a name=audia2concept.webp><p>Prompt : audi a2 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia2.webp" loading="lazy" alt="audi a2" /> 
+<a name=audia2.webp><p>Prompt : audi a2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia32.0tdi3-door.webp" loading="lazy" alt="audi a3 2.0 tdi 3-door" /> 
+<a name=audia32.0tdi3-door.webp><p>Prompt : audi a3 2.0 tdi 3-door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia32.0t.webp" loading="lazy" alt="audi a3 2.0t" /> 
+<a name=audia32.0t.webp><p>Prompt : audi a3 2.0t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia33-door.webp" loading="lazy" alt="audi a3 3-door" /> 
+<a name=audia33-door.webp><p>Prompt : audi a3 3-door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia33.2v63-door.webp" loading="lazy" alt="audi a3 3.2 v6 3-door" /> 
+<a name=audia33.2v63-door.webp><p>Prompt : audi a3 3.2 v6 3-door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia35-door.webp" loading="lazy" alt="audi a3 5-door" /> 
+<a name=audia35-door.webp><p>Prompt : audi a3 5-door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3cabriolet.webp" loading="lazy" alt="audi a3 cabriolet" /> 
+<a name=audia3cabriolet.webp><p>Prompt : audi a3 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3clubsportquattroconcept.webp" loading="lazy" alt="audi a3 clubsport quattro concept" /> 
+<a name=audia3clubsportquattroconcept.webp><p>Prompt : audi a3 clubsport quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3concept.webp" loading="lazy" alt="audi a3 concept" /> 
+<a name=audia3concept.webp><p>Prompt : audi a3 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3e-tronconcept.webp" loading="lazy" alt="audi a3 e-tron concept" /> 
+<a name=audia3e-tronconcept.webp><p>Prompt : audi a3 e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sedan.webp" loading="lazy" alt="audi a3 sedan" /> 
+<a name=audia3sedan.webp><p>Prompt : audi a3 sedan</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportback30g-tron.webp" loading="lazy" alt="audi a3 sportback 30 g-tron" /> 
+<a name=audia3sportback30g-tron.webp><p>Prompt : audi a3 sportback 30 g-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportback45tfsie.webp" loading="lazy" alt="audi a3 sportback 45 tfsi e" /> 
+<a name=audia3sportback45tfsie.webp><p>Prompt : audi a3 sportback 45 tfsi e</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportbacke-tron.webp" loading="lazy" alt="audi a3 sportback e-tron" /> 
+<a name=audia3sportbacke-tron.webp><p>Prompt : audi a3 sportback e-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportbackg-tron.webp" loading="lazy" alt="audi a3 sportback g-tron" /> 
+<a name=audia3sportbackg-tron.webp><p>Prompt : audi a3 sportback g-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportbackquattro.webp" loading="lazy" alt="audi a3 sportback quattro" /> 
+<a name=audia3sportbackquattro.webp><p>Prompt : audi a3 sportback quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportbacks-line.webp" loading="lazy" alt="audi a3 sportback s-line" /> 
+<a name=audia3sportbacks-line.webp><p>Prompt : audi a3 sportback s-line</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3sportback.webp" loading="lazy" alt="audi a3 sportback" /> 
+<a name=audia3sportback.webp><p>Prompt : audi a3 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3tdiclubsportquattroconcept.webp" loading="lazy" alt="audi a3 tdi clubsport quattro concept" /> 
+<a name=audia3tdiclubsportquattroconcept.webp><p>Prompt : audi a3 tdi clubsport quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3[us].webp" loading="lazy" alt="audi a3 [us]" /> 
+<a name=audia3[us].webp><p>Prompt : audi a3 [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia3.webp" loading="lazy" alt="audi a3" /> 
+<a name=audia3.webp><p>Prompt : audi a3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia42.0t.webp" loading="lazy" alt="audi a4 2.0t" /> 
+<a name=audia42.0t.webp><p>Prompt : audi a4 2.0t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia43.0tdiquattro.webp" loading="lazy" alt="audi a4 3.0 tdi quattro" /> 
+<a name=audia43.0tdiquattro.webp><p>Prompt : audi a4 3.0 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia43.2quattro.webp" loading="lazy" alt="audi a4 3.2 quattro" /> 
+<a name=audia43.2quattro.webp><p>Prompt : audi a4 3.2 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4allroadquattro.webp" loading="lazy" alt="audi a4 allroad quattro" /> 
+<a name=audia4allroadquattro.webp><p>Prompt : audi a4 allroad quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4avant3.2quattro.webp" loading="lazy" alt="audi a4 avant 3.2 quattro" /> 
+<a name=audia4avant3.2quattro.webp><p>Prompt : audi a4 avant 3.2 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4avantslinecompetitionplus.webp" loading="lazy" alt="audi a4 avant s line competition plus" /> 
+<a name=audia4avantslinecompetitionplus.webp><p>Prompt : audi a4 avant s line competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4avant.webp" loading="lazy" alt="audi a4 avant" /> 
+<a name=audia4avant.webp><p>Prompt : audi a4 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4cabriolet1.8t.webp" loading="lazy" alt="audi a4 cabriolet 1.8 t" /> 
+<a name=audia4cabriolet1.8t.webp><p>Prompt : audi a4 cabriolet 1.8 t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4cabriolet1.9tdi.webp" loading="lazy" alt="audi a4 cabriolet 1.9 tdi" /> 
+<a name=audia4cabriolet1.9tdi.webp><p>Prompt : audi a4 cabriolet 1.9 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4cabriolet2.4.webp" loading="lazy" alt="audi a4 cabriolet 2.4" /> 
+<a name=audia4cabriolet2.4.webp><p>Prompt : audi a4 cabriolet 2.4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4cabriolet3.0.webp" loading="lazy" alt="audi a4 cabriolet 3.0" /> 
+<a name=audia4cabriolet3.0.webp><p>Prompt : audi a4 cabriolet 3.0</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4cabriolet.webp" loading="lazy" alt="audi a4 cabriolet" /> 
+<a name=audia4cabriolet.webp><p>Prompt : audi a4 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4dtmedition.webp" loading="lazy" alt="audi a4 dtm edition" /> 
+<a name=audia4dtmedition.webp><p>Prompt : audi a4 dtm edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4tdiconcepte.webp" loading="lazy" alt="audi a4 tdi concept e" /> 
+<a name=audia4tdiconcepte.webp><p>Prompt : audi a4 tdi concept e</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4[us].webp" loading="lazy" alt="audi a4 [us]" /> 
+<a name=audia4[us].webp><p>Prompt : audi a4 [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia4.webp" loading="lazy" alt="audi a4" /> 
+<a name=audia4.webp><p>Prompt : audi a4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia53.0tdiquattro.webp" loading="lazy" alt="audi a5 3.0 tdi quattro" /> 
+<a name=audia53.0tdiquattro.webp><p>Prompt : audi a5 3.0 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5cabriolet.webp" loading="lazy" alt="audi a5 cabriolet" /> 
+<a name=audia5cabriolet.webp><p>Prompt : audi a5 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5coupe.webp" loading="lazy" alt="audi a5 coupe" /> 
+<a name=audia5coupe.webp><p>Prompt : audi a5 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5dtm.webp" loading="lazy" alt="audi a5 dtm" /> 
+<a name=audia5dtm.webp><p>Prompt : audi a5 dtm</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5sportbackg-tron.webp" loading="lazy" alt="audi a5 sportback g-tron" /> 
+<a name=audia5sportbackg-tron.webp><p>Prompt : audi a5 sportback g-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5sportbackslinecompetitionplus.webp" loading="lazy" alt="audi a5 sportback s line competition plus" /> 
+<a name=audia5sportbackslinecompetitionplus.webp><p>Prompt : audi a5 sportback s line competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5sportback.webp" loading="lazy" alt="audi a5 sportback" /> 
+<a name=audia5sportback.webp><p>Prompt : audi a5 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia5.webp" loading="lazy" alt="audi a5" /> 
+<a name=audia5.webp><p>Prompt : audi a5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia63.0tdiquattro.webp" loading="lazy" alt="audi a6 3.0 tdi quattro" /> 
+<a name=audia63.0tdiquattro.webp><p>Prompt : audi a6 3.0 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia63.2.webp" loading="lazy" alt="audi a6 3.2" /> 
+<a name=audia63.2.webp><p>Prompt : audi a6 3.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia64.2quattrosline.webp" loading="lazy" alt="audi a6 4.2 quattro sline" /> 
+<a name=audia64.2quattrosline.webp><p>Prompt : audi a6 4.2 quattro sline</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia64.2quattro.webp" loading="lazy" alt="audi a6 4.2 quattro" /> 
+<a name=audia64.2quattro.webp><p>Prompt : audi a6 4.2 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia655tfsiequattro.webp" loading="lazy" alt="audi a6 55 tfsi e quattro" /> 
+<a name=audia655tfsiequattro.webp><p>Prompt : audi a6 55 tfsi e quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6allroadquattro.webp" loading="lazy" alt="audi a6 allroad quattro" /> 
+<a name=audia6allroadquattro.webp><p>Prompt : audi a6 allroad quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6avant55tfsiequattro.webp" loading="lazy" alt="audi a6 avant 55 tfsi e quattro" /> 
+<a name=audia6avant55tfsiequattro.webp><p>Prompt : audi a6 avant 55 tfsi e quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6avante-tronconcept.webp" loading="lazy" alt="audi a6 avant e-tron concept" /> 
+<a name=audia6avante-tronconcept.webp><p>Prompt : audi a6 avant e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6avant[uk].webp" loading="lazy" alt="audi a6 avant [uk]" /> 
+<a name=audia6avant[uk].webp><p>Prompt : audi a6 avant [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6avant.webp" loading="lazy" alt="audi a6 avant" /> 
+<a name=audia6avant.webp><p>Prompt : audi a6 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6blackedition.webp" loading="lazy" alt="audi a6 black edition" /> 
+<a name=audia6blackedition.webp><p>Prompt : audi a6 black edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6e-tronconcept.webp" loading="lazy" alt="audi a6 e-tron concept" /> 
+<a name=audia6e-tronconcept.webp><p>Prompt : audi a6 e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6hybrid.webp" loading="lazy" alt="audi a6 hybrid" /> 
+<a name=audia6hybrid.webp><p>Prompt : audi a6 hybrid</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6le-tronconcept.webp" loading="lazy" alt="audi a6 l e-tron concept" /> 
+<a name=audia6le-tronconcept.webp><p>Prompt : audi a6 l e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6.webp" loading="lazy" alt="audi a6" /> 
+<a name=audia6.webp><p>Prompt : audi a6</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6le-tron.webp" loading="lazy" alt="audi a6l e-tron" /> 
+<a name=audia6le-tron.webp><p>Prompt : audi a6l e-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia6l.webp" loading="lazy" alt="audi a6l" /> 
+<a name=audia6l.webp><p>Prompt : audi a6l</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia7sportback3.0tdicompetition.webp" loading="lazy" alt="audi a7 sportback 3.0 tdi competition" /> 
+<a name=audia7sportback3.0tdicompetition.webp><p>Prompt : audi a7 sportback 3.0 tdi competition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia7sportback55tfsiequattro.webp" loading="lazy" alt="audi a7 sportback 55 tfsi e quattro" /> 
+<a name=audia7sportback55tfsiequattro.webp><p>Prompt : audi a7 sportback 55 tfsi e quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia7sportbackh-tronquattroconcept.webp" loading="lazy" alt="audi a7 sportback h-tron quattro concept" /> 
+<a name=audia7sportbackh-tronquattroconcept.webp><p>Prompt : audi a7 sportback h-tron quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia7sportback.webp" loading="lazy" alt="audi a7 sportback" /> 
+<a name=audia7sportback.webp><p>Prompt : audi a7 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia83.0tdiquattro.webp" loading="lazy" alt="audi a8 3.0 tdi quattro" /> 
+<a name=audia83.0tdiquattro.webp><p>Prompt : audi a8 3.0 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia83.2fsiquattro.webp" loading="lazy" alt="audi a8 3.2 fsi quattro" /> 
+<a name=audia83.2fsiquattro.webp><p>Prompt : audi a8 3.2 fsi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia83.3tdiquattro.webp" loading="lazy" alt="audi a8 3.3 tdi quattro" /> 
+<a name=audia83.3tdiquattro.webp><p>Prompt : audi a8 3.3 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia83.7quattro.webp" loading="lazy" alt="audi a8 3.7 quattro" /> 
+<a name=audia83.7quattro.webp><p>Prompt : audi a8 3.7 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia84.0tdiquattro.webp" loading="lazy" alt="audi a8 4.0 tdi quattro" /> 
+<a name=audia84.0tdiquattro.webp><p>Prompt : audi a8 4.0 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia84.2quattro.webp" loading="lazy" alt="audi a8 4.2 quattro" /> 
+<a name=audia84.2quattro.webp><p>Prompt : audi a8 4.2 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia84.2tdiquattro.webp" loading="lazy" alt="audi a8 4.2 tdi quattro" /> 
+<a name=audia84.2tdiquattro.webp><p>Prompt : audi a8 4.2 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia84.2.webp" loading="lazy" alt="audi a8 4.2" /> 
+<a name=audia84.2.webp><p>Prompt : audi a8 4.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8hybridconcept.webp" loading="lazy" alt="audi a8 hybrid concept" /> 
+<a name=audia8hybridconcept.webp><p>Prompt : audi a8 hybrid concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8hybrid.webp" loading="lazy" alt="audi a8 hybrid" /> 
+<a name=audia8hybrid.webp><p>Prompt : audi a8 hybrid</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l3.0quattro.webp" loading="lazy" alt="audi a8 l 3.0 quattro" /> 
+<a name=audia8l3.0quattro.webp><p>Prompt : audi a8 l 3.0 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l4.2quattro.webp" loading="lazy" alt="audi a8 l 4.2 quattro" /> 
+<a name=audia8l4.2quattro.webp><p>Prompt : audi a8 l 4.2 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l4.2.webp" loading="lazy" alt="audi a8 l 4.2" /> 
+<a name=audia8l4.2.webp><p>Prompt : audi a8 l 4.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l6.0quattro.webp" loading="lazy" alt="audi a8 l 6.0 quattro" /> 
+<a name=audia8l6.0quattro.webp><p>Prompt : audi a8 l 6.0 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l6.0w12quattro.webp" loading="lazy" alt="audi a8 l 6.0 w12 quattro" /> 
+<a name=audia8l6.0w12quattro.webp><p>Prompt : audi a8 l 6.0 w12 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l60tfsie.webp" loading="lazy" alt="audi a8 l 60 tfsi e" /> 
+<a name=audia8l60tfsie.webp><p>Prompt : audi a8 l 60 tfsi e</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8lextended.webp" loading="lazy" alt="audi a8 l extended" /> 
+<a name=audia8lextended.webp><p>Prompt : audi a8 l extended</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8lhybrid.webp" loading="lazy" alt="audi a8 l hybrid" /> 
+<a name=audia8lhybrid.webp><p>Prompt : audi a8 l hybrid</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8lsecurity.webp" loading="lazy" alt="audi a8 l security" /> 
+<a name=audia8lsecurity.webp><p>Prompt : audi a8 l security</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8lw12.webp" loading="lazy" alt="audi a8 l w12" /> 
+<a name=audia8lw12.webp><p>Prompt : audi a8 l w12</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l.webp" loading="lazy" alt="audi a8 l" /> 
+<a name=audia8l.webp><p>Prompt : audi a8 l</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8security.webp" loading="lazy" alt="audi a8 security" /> 
+<a name=audia8security.webp><p>Prompt : audi a8 security</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8.webp" loading="lazy" alt="audi a8" /> 
+<a name=audia8.webp><p>Prompt : audi a8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l4.2tdiquattro.webp" loading="lazy" alt="audi a8l 4.2 tdi quattro" /> 
+<a name=audia8l4.2tdiquattro.webp><p>Prompt : audi a8l 4.2 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8lw12quattro.webp" loading="lazy" alt="audi a8l w12 quattro" /> 
+<a name=audia8lw12quattro.webp><p>Prompt : audi a8l w12 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audia8l.webp" loading="lazy" alt="audi a8l" /> 
+<a name=audia8l.webp><p>Prompt : audi a8l</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiai-meconcept.webp" loading="lazy" alt="audi ai-me concept" /> 
+<a name=audiai-meconcept.webp><p>Prompt : audi ai-me concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiai-trailquattroconcept.webp" loading="lazy" alt="audi ai-trail quattro concept" /> 
+<a name=audiai-trailquattroconcept.webp><p>Prompt : audi ai-trail quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiaiconconcept.webp" loading="lazy" alt="audi aicon concept" /> 
+<a name=audiaiconconcept.webp><p>Prompt : audi aicon concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattro2.5tdi.webp" loading="lazy" alt="audi allroad quattro 2.5 tdi" /> 
+<a name=audiallroadquattro2.5tdi.webp><p>Prompt : audi allroad quattro 2.5 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattro2.7t.webp" loading="lazy" alt="audi allroad quattro 2.7t" /> 
+<a name=audiallroadquattro2.7t.webp><p>Prompt : audi allroad quattro 2.7t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattro4.2.webp" loading="lazy" alt="audi allroad quattro 4.2" /> 
+<a name=audiallroadquattro4.2.webp><p>Prompt : audi allroad quattro 4.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattroconcept.webp" loading="lazy" alt="audi allroad quattro concept" /> 
+<a name=audiallroadquattroconcept.webp><p>Prompt : audi allroad quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattrov62.7t.webp" loading="lazy" alt="audi allroad quattro v6 2.7t" /> 
+<a name=audiallroadquattrov62.7t.webp><p>Prompt : audi allroad quattro v6 2.7t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattrov84.2.webp" loading="lazy" alt="audi allroad quattro v8 4.2" /> 
+<a name=audiallroadquattrov84.2.webp><p>Prompt : audi allroad quattro v8 4.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadquattro.webp" loading="lazy" alt="audi allroad quattro" /> 
+<a name=audiallroadquattro.webp><p>Prompt : audi allroad quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiallroadshootingbrakeconcept.webp" loading="lazy" alt="audi allroad shooting brake concept" /> 
+<a name=audiallroadshootingbrakeconcept.webp><p>Prompt : audi allroad shooting brake concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiavantissimoconcept.webp" loading="lazy" alt="audi avantissimo concept" /> 
+<a name=audiavantissimoconcept.webp><p>Prompt : audi avantissimo concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiavusquattroconcept.webp" loading="lazy" alt="audi avus quattro concept" /> 
+<a name=audiavusquattroconcept.webp><p>Prompt : audi avus quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audicabriolet.webp" loading="lazy" alt="audi cabriolet" /> 
+<a name=audicabriolet.webp><p>Prompt : audi cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audicoupegt.webp" loading="lazy" alt="audi coupe gt" /> 
+<a name=audicoupegt.webp><p>Prompt : audi coupe gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audicoupe.webp" loading="lazy" alt="audi coupe" /> 
+<a name=audicoupe.webp><p>Prompt : audi coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audicrosscabrioletquattroconcept.webp" loading="lazy" alt="audi cross cabriolet quattro concept" /> 
+<a name=audicrosscabrioletquattroconcept.webp><p>Prompt : audi cross cabriolet quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audicrosscoupequattroconcept.webp" loading="lazy" alt="audi cross coupe quattro concept" /> 
+<a name=audicrosscoupequattroconcept.webp><p>Prompt : audi cross coupe quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audicrosslanecoupeconcept.webp" loading="lazy" alt="audi crosslane coupe concept" /> 
+<a name=audicrosslanecoupeconcept.webp><p>Prompt : audi crosslane coupe concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-bikewortherseeconcept.webp" loading="lazy" alt="audi e-bike worthersee concept" /> 
+<a name=audie-bikewortherseeconcept.webp><p>Prompt : audi e-bike worthersee concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronconcept.webp" loading="lazy" alt="audi e-tron concept" /> 
+<a name=audie-tronconcept.webp><p>Prompt : audi e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-trongtconcept.webp" loading="lazy" alt="audi e-tron gt concept" /> 
+<a name=audie-trongtconcept.webp><p>Prompt : audi e-tron gt concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-trongtquattro.webp" loading="lazy" alt="audi e-tron gt quattro" /> 
+<a name=audie-trongtquattro.webp><p>Prompt : audi e-tron gt quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronquattroconcept.webp" loading="lazy" alt="audi e-tron quattro concept" /> 
+<a name=audie-tronquattroconcept.webp><p>Prompt : audi e-tron quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronssportback[uk].webp" loading="lazy" alt="audi e-tron s sportback [uk]" /> 
+<a name=audie-tronssportback[uk].webp><p>Prompt : audi e-tron s sportback [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronssportback.webp" loading="lazy" alt="audi e-tron s sportback" /> 
+<a name=audie-tronssportback.webp><p>Prompt : audi e-tron s sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-trons.webp" loading="lazy" alt="audi e-tron s" /> 
+<a name=audie-trons.webp><p>Prompt : audi e-tron s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronsportbackconcept.webp" loading="lazy" alt="audi e-tron sportback concept" /> 
+<a name=audie-tronsportbackconcept.webp><p>Prompt : audi e-tron sportback concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronsportback.webp" loading="lazy" alt="audi e-tron sportback" /> 
+<a name=audie-tronsportback.webp><p>Prompt : audi e-tron sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronspyderconcept.webp" loading="lazy" alt="audi e-tron spyder concept" /> 
+<a name=audie-tronspyderconcept.webp><p>Prompt : audi e-tron spyder concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tronvisiongranturismoconcept.webp" loading="lazy" alt="audi e-tron vision gran turismo concept" /> 
+<a name=audie-tronvisiongranturismoconcept.webp><p>Prompt : audi e-tron vision gran turismo concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audie-tron.webp" loading="lazy" alt="audi e-tron" /> 
+<a name=audie-tron.webp><p>Prompt : audi e-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audigrandsphereconcept.webp" loading="lazy" alt="audi grandsphere concept" /> 
+<a name=audigrandsphereconcept.webp><p>Prompt : audi grandsphere concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audih-tronquattroconcept.webp" loading="lazy" alt="audi h-tron quattro concept" /> 
+<a name=audih-tronquattroconcept.webp><p>Prompt : audi h-tron quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiimperator.webp" loading="lazy" alt="audi imperator" /> 
+<a name=audiimperator.webp><p>Prompt : audi imperator</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audilemansquattroconcept.webp" loading="lazy" alt="audi le mans quattro concept" /> 
+<a name=audilemansquattroconcept.webp><p>Prompt : audi le mans quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audimetroprojectquattroconcept.webp" loading="lazy" alt="audi metroproject quattro concept" /> 
+<a name=audimetroprojectquattroconcept.webp><p>Prompt : audi metroproject quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audinanukquattroconcept.webp" loading="lazy" alt="audi nanuk quattro concept" /> 
+<a name=audinanukquattroconcept.webp><p>Prompt : audi nanuk quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audinuvolariquattroconcept.webp" loading="lazy" alt="audi nuvolari quattro concept" /> 
+<a name=audinuvolariquattroconcept.webp><p>Prompt : audi nuvolari quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audipb18e-tronconcept.webp" loading="lazy" alt="audi pb18 e-tron concept" /> 
+<a name=audipb18e-tronconcept.webp><p>Prompt : audi pb18 e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audipikespeakequattroconcept.webp" loading="lazy" alt="audi pikes peake quattro concept" /> 
+<a name=audipikespeakequattroconcept.webp><p>Prompt : audi pikes peake quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiprologueallroadconcept.webp" loading="lazy" alt="audi prologue allroad concept" /> 
+<a name=audiprologueallroadconcept.webp><p>Prompt : audi prologue allroad concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiprologueavantconcept.webp" loading="lazy" alt="audi prologue avant concept" /> 
+<a name=audiprologueavantconcept.webp><p>Prompt : audi prologue avant concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiprologueconcept.webp" loading="lazy" alt="audi prologue concept" /> 
+<a name=audiprologueconcept.webp><p>Prompt : audi prologue concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiprologuepiloteddrivingconcept.webp" loading="lazy" alt="audi prologue piloted driving concept" /> 
+<a name=audiprologuepiloteddrivingconcept.webp><p>Prompt : audi prologue piloted driving concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq2.webp" loading="lazy" alt="audi q2" /> 
+<a name=audiq2.webp><p>Prompt : audi q2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq345tfsie.webp" loading="lazy" alt="audi q3 45 tfsi e" /> 
+<a name=audiq345tfsie.webp><p>Prompt : audi q3 45 tfsi e</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq3jinlongyufengconcept.webp" loading="lazy" alt="audi q3 jinlong yufeng concept" /> 
+<a name=audiq3jinlongyufengconcept.webp><p>Prompt : audi q3 jinlong yufeng concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq3sportback45tfsie.webp" loading="lazy" alt="audi q3 sportback 45 tfsi e" /> 
+<a name=audiq3sportback45tfsie.webp><p>Prompt : audi q3 sportback 45 tfsi e</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq3sportback.webp" loading="lazy" alt="audi q3 sportback" /> 
+<a name=audiq3sportback.webp><p>Prompt : audi q3 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq3vailconcept.webp" loading="lazy" alt="audi q3 vail concept" /> 
+<a name=audiq3vailconcept.webp><p>Prompt : audi q3 vail concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq3.webp" loading="lazy" alt="audi q3" /> 
+<a name=audiq3.webp><p>Prompt : audi q3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq4e-tronconcept.webp" loading="lazy" alt="audi q4 e-tron concept" /> 
+<a name=audiq4e-tronconcept.webp><p>Prompt : audi q4 e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq4e-tron.webp" loading="lazy" alt="audi q4 e-tron" /> 
+<a name=audiq4e-tron.webp><p>Prompt : audi q4 e-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq4sportbacke-tronconcept.webp" loading="lazy" alt="audi q4 sportback e-tron concept" /> 
+<a name=audiq4sportbacke-tronconcept.webp><p>Prompt : audi q4 sportback e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq4sportbacke-tron[uk].webp" loading="lazy" alt="audi q4 sportback e-tron [uk]" /> 
+<a name=audiq4sportbacke-tron[uk].webp><p>Prompt : audi q4 sportback e-tron [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq4sportbacke-tron.webp" loading="lazy" alt="audi q4 sportback e-tron" /> 
+<a name=audiq4sportbacke-tron.webp><p>Prompt : audi q4 sportback e-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq5customconcept.webp" loading="lazy" alt="audi q5 custom concept" /> 
+<a name=audiq5customconcept.webp><p>Prompt : audi q5 custom concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq5hybridquattro.webp" loading="lazy" alt="audi q5 hybrid quattro" /> 
+<a name=audiq5hybridquattro.webp><p>Prompt : audi q5 hybrid quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq5sportback[uk].webp" loading="lazy" alt="audi q5 sportback [uk]" /> 
+<a name=audiq5sportback[uk].webp><p>Prompt : audi q5 sportback [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq5sportback.webp" loading="lazy" alt="audi q5 sportback" /> 
+<a name=audiq5sportback.webp><p>Prompt : audi q5 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq5.webp" loading="lazy" alt="audi q5" /> 
+<a name=audiq5.webp><p>Prompt : audi q5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7competitionplus.webp" loading="lazy" alt="audi q7 competition plus" /> 
+<a name=audiq7competitionplus.webp><p>Prompt : audi q7 competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7e-tron2.0tfsiquattro.webp" loading="lazy" alt="audi q7 e-tron 2.0 tfsi quattro" /> 
+<a name=audiq7e-tron2.0tfsiquattro.webp><p>Prompt : audi q7 e-tron 2.0 tfsi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7e-tron3.0tdiquattro.webp" loading="lazy" alt="audi q7 e-tron 3.0 tdi quattro" /> 
+<a name=audiq7e-tron3.0tdiquattro.webp><p>Prompt : audi q7 e-tron 3.0 tdi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7hybridconcept.webp" loading="lazy" alt="audi q7 hybrid concept" /> 
+<a name=audiq7hybridconcept.webp><p>Prompt : audi q7 hybrid concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7tfsiequattro.webp" loading="lazy" alt="audi q7 tfsi e quattro" /> 
+<a name=audiq7tfsiequattro.webp><p>Prompt : audi q7 tfsi e quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7v12tdiconcept.webp" loading="lazy" alt="audi q7 v12 tdi concept" /> 
+<a name=audiq7v12tdiconcept.webp><p>Prompt : audi q7 v12 tdi concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7v12tdi.webp" loading="lazy" alt="audi q7 v12 tdi" /> 
+<a name=audiq7v12tdi.webp><p>Prompt : audi q7 v12 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq7.webp" loading="lazy" alt="audi q7" /> 
+<a name=audiq7.webp><p>Prompt : audi q7</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq8competitionplus.webp" loading="lazy" alt="audi q8 competition plus" /> 
+<a name=audiq8competitionplus.webp><p>Prompt : audi q8 competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq8concept.webp" loading="lazy" alt="audi q8 concept" /> 
+<a name=audiq8concept.webp><p>Prompt : audi q8 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq8sportconcept.webp" loading="lazy" alt="audi q8 sport concept" /> 
+<a name=audiq8sportconcept.webp><p>Prompt : audi q8 sport concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq8tfsiequattro.webp" loading="lazy" alt="audi q8 tfsi e quattro" /> 
+<a name=audiq8tfsiequattro.webp><p>Prompt : audi q8 tfsi e quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq8[uk].webp" loading="lazy" alt="audi q8 [uk]" /> 
+<a name=audiq8[uk].webp><p>Prompt : audi q8 [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiq8.webp" loading="lazy" alt="audi q8" /> 
+<a name=audiq8.webp><p>Prompt : audi q8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiquattroa2rallye.webp" loading="lazy" alt="audi quattro a2 rallye" /> 
+<a name=audiquattroa2rallye.webp><p>Prompt : audi quattro a2 rallye</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiquattroconcept.webp" loading="lazy" alt="audi quattro concept" /> 
+<a name=audiquattroconcept.webp><p>Prompt : audi quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiquattrospyderconcept.webp" loading="lazy" alt="audi quattro spyder concept" /> 
+<a name=audiquattrospyderconcept.webp><p>Prompt : audi quattro spyder concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiquattro.webp" loading="lazy" alt="audi quattro" /> 
+<a name=audiquattro.webp><p>Prompt : audi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir18e-tronquattrolmp1racecar.webp" loading="lazy" alt="audi r18 e-tron quattro lmp1 racecar" /> 
+<a name=audir18e-tronquattrolmp1racecar.webp><p>Prompt : audi r18 e-tron quattro lmp1 racecar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir18e-tronquattroracecar.webp" loading="lazy" alt="audi r18 e-tron quattro racecar" /> 
+<a name=audir18e-tronquattroracecar.webp><p>Prompt : audi r18 e-tron quattro racecar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir18racecar.webp" loading="lazy" alt="audi r18 racecar" /> 
+<a name=audir18racecar.webp><p>Prompt : audi r18 racecar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir18.webp" loading="lazy" alt="audi r18" /> 
+<a name=audir18.webp><p>Prompt : audi r18</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8competition.webp" loading="lazy" alt="audi r8 competition" /> 
+<a name=audir8competition.webp><p>Prompt : audi r8 competition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8coupeaudisportedition.webp" loading="lazy" alt="audi r8 coupe audi sport edition" /> 
+<a name=audir8coupeaudisportedition.webp><p>Prompt : audi r8 coupe audi sport edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8coupev10plusselection24h.webp" loading="lazy" alt="audi r8 coupe v10 plus selection 24h" /> 
+<a name=audir8coupev10plusselection24h.webp><p>Prompt : audi r8 coupe v10 plus selection 24h</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8coupe[us].webp" loading="lazy" alt="audi r8 coupe [us]" /> 
+<a name=audir8coupe[us].webp><p>Prompt : audi r8 coupe [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8coupe.webp" loading="lazy" alt="audi r8 coupe" /> 
+<a name=audir8coupe.webp><p>Prompt : audi r8 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8e-tronconcept.webp" loading="lazy" alt="audi r8 e-tron concept" /> 
+<a name=audir8e-tronconcept.webp><p>Prompt : audi r8 e-tron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8e-tron.webp" loading="lazy" alt="audi r8 e-tron" /> 
+<a name=audir8e-tron.webp><p>Prompt : audi r8 e-tron</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8exclusiveselection.webp" loading="lazy" alt="audi r8 exclusive selection" /> 
+<a name=audir8exclusiveselection.webp><p>Prompt : audi r8 exclusive selection</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8gtspyder.webp" loading="lazy" alt="audi r8 gt spyder" /> 
+<a name=audir8gtspyder.webp><p>Prompt : audi r8 gt spyder</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8gt.webp" loading="lazy" alt="audi r8 gt" /> 
+<a name=audir8gt.webp><p>Prompt : audi r8 gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8gt3.webp" loading="lazy" alt="audi r8 gt3" /> 
+<a name=audir8gt3.webp><p>Prompt : audi r8 gt3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8lmsgt2.webp" loading="lazy" alt="audi r8 lms gt2" /> 
+<a name=audir8lmsgt2.webp><p>Prompt : audi r8 lms gt2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8lmsgt3.webp" loading="lazy" alt="audi r8 lms gt3" /> 
+<a name=audir8lmsgt3.webp><p>Prompt : audi r8 lms gt3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8lmsgt4.webp" loading="lazy" alt="audi r8 lms gt4" /> 
+<a name=audir8lmsgt4.webp><p>Prompt : audi r8 lms gt4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8lms.webp" loading="lazy" alt="audi r8 lms" /> 
+<a name=audir8lms.webp><p>Prompt : audi r8 lms</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8lmx.webp" loading="lazy" alt="audi r8 lmx" /> 
+<a name=audir8lmx.webp><p>Prompt : audi r8 lmx</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8performanceparts.webp" loading="lazy" alt="audi r8 performance parts" /> 
+<a name=audir8performanceparts.webp><p>Prompt : audi r8 performance parts</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8rwdpantheredition.webp" loading="lazy" alt="audi r8 rwd panther edition" /> 
+<a name=audir8rwdpantheredition.webp><p>Prompt : audi r8 rwd panther edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8spyder4.2fsiquattro.webp" loading="lazy" alt="audi r8 spyder 4.2 fsi quattro" /> 
+<a name=audir8spyder4.2fsiquattro.webp><p>Prompt : audi r8 spyder 4.2 fsi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8spyder5.2fsiquattro.webp" loading="lazy" alt="audi r8 spyder 5.2 fsi quattro" /> 
+<a name=audir8spyder5.2fsiquattro.webp><p>Prompt : audi r8 spyder 5.2 fsi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8spyderv10plus.webp" loading="lazy" alt="audi r8 spyder v10 plus" /> 
+<a name=audir8spyderv10plus.webp><p>Prompt : audi r8 spyder v10 plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8spyderv10rws.webp" loading="lazy" alt="audi r8 spyder v10 rws" /> 
+<a name=audir8spyderv10rws.webp><p>Prompt : audi r8 spyder v10 rws</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8spyderv10.webp" loading="lazy" alt="audi r8 spyder v10" /> 
+<a name=audir8spyderv10.webp><p>Prompt : audi r8 spyder v10</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8spyder.webp" loading="lazy" alt="audi r8 spyder" /> 
+<a name=audir8spyder.webp><p>Prompt : audi r8 spyder</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8tdilemansconcept.webp" loading="lazy" alt="audi r8 tdi le mans concept" /> 
+<a name=audir8tdilemansconcept.webp><p>Prompt : audi r8 tdi le mans concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v105.2fsiquattro.webp" loading="lazy" alt="audi r8 v10 5.2 fsi quattro" /> 
+<a name=audir8v105.2fsiquattro.webp><p>Prompt : audi r8 v10 5.2 fsi quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10decennium.webp" loading="lazy" alt="audi r8 v10 decennium" /> 
+<a name=audir8v10decennium.webp><p>Prompt : audi r8 v10 decennium</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10performancerwdspyder.webp" loading="lazy" alt="audi r8 v10 performance rwd spyder" /> 
+<a name=audir8v10performancerwdspyder.webp><p>Prompt : audi r8 v10 performance rwd spyder</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10performancerwd.webp" loading="lazy" alt="audi r8 v10 performance rwd" /> 
+<a name=audir8v10performancerwd.webp><p>Prompt : audi r8 v10 performance rwd</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10plus.webp" loading="lazy" alt="audi r8 v10 plus" /> 
+<a name=audir8v10plus.webp><p>Prompt : audi r8 v10 plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10rwdspyder.webp" loading="lazy" alt="audi r8 v10 rwd spyder" /> 
+<a name=audir8v10rwdspyder.webp><p>Prompt : audi r8 v10 rwd spyder</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10rwd.webp" loading="lazy" alt="audi r8 v10 rwd" /> 
+<a name=audir8v10rwd.webp><p>Prompt : audi r8 v10 rwd</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10rws.webp" loading="lazy" alt="audi r8 v10 rws" /> 
+<a name=audir8v10rws.webp><p>Prompt : audi r8 v10 rws</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10spyder.webp" loading="lazy" alt="audi r8 v10 spyder" /> 
+<a name=audir8v10spyder.webp><p>Prompt : audi r8 v10 spyder</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v10.webp" loading="lazy" alt="audi r8 v10" /> 
+<a name=audir8v10.webp><p>Prompt : audi r8 v10</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8v12tdiconcept.webp" loading="lazy" alt="audi r8 v12 tdi concept" /> 
+<a name=audir8v12tdiconcept.webp><p>Prompt : audi r8 v12 tdi concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8.webp" loading="lazy" alt="audi r8" /> 
+<a name=audir8.webp><p>Prompt : audi r8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audir8r.webp" loading="lazy" alt="audi r8r" /> 
+<a name=audir8r.webp><p>Prompt : audi r8r</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiroadjetconcept.webp" loading="lazy" alt="audi roadjet concept" /> 
+<a name=audiroadjetconcept.webp><p>Prompt : audi roadjet concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirosemeyerconcept.webp" loading="lazy" alt="audi rosemeyer concept" /> 
+<a name=audirosemeyerconcept.webp><p>Prompt : audi rosemeyer concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4avant.webp" loading="lazy" alt="audi rs 4 avant" /> 
+<a name=audirs4avant.webp><p>Prompt : audi rs 4 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4cabriolet.webp" loading="lazy" alt="audi rs 4 cabriolet" /> 
+<a name=audirs4cabriolet.webp><p>Prompt : audi rs 4 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirse-trongt.webp" loading="lazy" alt="audi rs e-tron gt" /> 
+<a name=audirse-trongt.webp><p>Prompt : audi rs e-tron gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsqe-trondakarrally.webp" loading="lazy" alt="audi rs q e-tron dakar rally" /> 
+<a name=audirsqe-trondakarrally.webp><p>Prompt : audi rs q e-tron dakar rally</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsq3concept.webp" loading="lazy" alt="audi rs q3 concept" /> 
+<a name=audirsq3concept.webp><p>Prompt : audi rs q3 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsq3performance.webp" loading="lazy" alt="audi rs q3 performance" /> 
+<a name=audirsq3performance.webp><p>Prompt : audi rs q3 performance</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsq3sportback.webp" loading="lazy" alt="audi rs q3 sportback" /> 
+<a name=audirsq3sportback.webp><p>Prompt : audi rs q3 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsq3.webp" loading="lazy" alt="audi rs q3" /> 
+<a name=audirsq3.webp><p>Prompt : audi rs q3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsq8.webp" loading="lazy" alt="audi rs q8" /> 
+<a name=audirsq8.webp><p>Prompt : audi rs q8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs2avant.webp" loading="lazy" alt="audi rs2 avant" /> 
+<a name=audirs2avant.webp><p>Prompt : audi rs2 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs3lmsracecar.webp" loading="lazy" alt="audi rs3 lms racecar" /> 
+<a name=audirs3lmsracecar.webp><p>Prompt : audi rs3 lms racecar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs3saloon[uk].webp" loading="lazy" alt="audi rs3 saloon [uk]" /> 
+<a name=audirs3saloon[uk].webp><p>Prompt : audi rs3 saloon [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs3sedan[us].webp" loading="lazy" alt="audi rs3 sedan [us]" /> 
+<a name=audirs3sedan[us].webp><p>Prompt : audi rs3 sedan [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs3sedan.webp" loading="lazy" alt="audi rs3 sedan" /> 
+<a name=audirs3sedan.webp><p>Prompt : audi rs3 sedan</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs3sportback.webp" loading="lazy" alt="audi rs3 sportback" /> 
+<a name=audirs3sportback.webp><p>Prompt : audi rs3 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs3.webp" loading="lazy" alt="audi rs3" /> 
+<a name=audirs3.webp><p>Prompt : audi rs3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4avantcompetitionplus.webp" loading="lazy" alt="audi rs4 avant competition plus" /> 
+<a name=audirs4avantcompetitionplus.webp><p>Prompt : audi rs4 avant competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4avantnogaroselection.webp" loading="lazy" alt="audi rs4 avant nogaro selection" /> 
+<a name=audirs4avantnogaroselection.webp><p>Prompt : audi rs4 avant nogaro selection</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4avant.webp" loading="lazy" alt="audi rs4 avant" /> 
+<a name=audirs4avant.webp><p>Prompt : audi rs4 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4cabriolet.webp" loading="lazy" alt="audi rs4 cabriolet" /> 
+<a name=audirs4cabriolet.webp><p>Prompt : audi rs4 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs4.webp" loading="lazy" alt="audi rs4" /> 
+<a name=audirs4.webp><p>Prompt : audi rs4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5cabriolet.webp" loading="lazy" alt="audi rs5 cabriolet" /> 
+<a name=audirs5cabriolet.webp><p>Prompt : audi rs5 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5coupecompetitionplus.webp" loading="lazy" alt="audi rs5 coupe competition plus" /> 
+<a name=audirs5coupecompetitionplus.webp><p>Prompt : audi rs5 coupe competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5coupesportedition.webp" loading="lazy" alt="audi rs5 coupe sport edition" /> 
+<a name=audirs5coupesportedition.webp><p>Prompt : audi rs5 coupe sport edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5coupe.webp" loading="lazy" alt="audi rs5 coupe" /> 
+<a name=audirs5coupe.webp><p>Prompt : audi rs5 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5dtm.webp" loading="lazy" alt="audi rs5 dtm" /> 
+<a name=audirs5dtm.webp><p>Prompt : audi rs5 dtm</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5sportbackcompetitionplus.webp" loading="lazy" alt="audi rs5 sportback competition plus" /> 
+<a name=audirs5sportbackcompetitionplus.webp><p>Prompt : audi rs5 sportback competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5sportback.webp" loading="lazy" alt="audi rs5 sportback" /> 
+<a name=audirs5sportback.webp><p>Prompt : audi rs5 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5tdiconcept.webp" loading="lazy" alt="audi rs5 tdi concept" /> 
+<a name=audirs5tdiconcept.webp><p>Prompt : audi rs5 tdi concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs5.webp" loading="lazy" alt="audi rs5" /> 
+<a name=audirs5.webp><p>Prompt : audi rs5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs6avantperformance.webp" loading="lazy" alt="audi rs6 avant performance" /> 
+<a name=audirs6avantperformance.webp><p>Prompt : audi rs6 avant performance</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs6avantrstributeedition.webp" loading="lazy" alt="audi rs6 avant rs tribute edition" /> 
+<a name=audirs6avantrstributeedition.webp><p>Prompt : audi rs6 avant rs tribute edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs6avant.webp" loading="lazy" alt="audi rs6 avant" /> 
+<a name=audirs6avant.webp><p>Prompt : audi rs6 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs6plus.webp" loading="lazy" alt="audi rs6 plus" /> 
+<a name=audirs6plus.webp><p>Prompt : audi rs6 plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs6sedan.webp" loading="lazy" alt="audi rs6 sedan" /> 
+<a name=audirs6sedan.webp><p>Prompt : audi rs6 sedan</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs6.webp" loading="lazy" alt="audi rs6" /> 
+<a name=audirs6.webp><p>Prompt : audi rs6</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs7sportbackperformance.webp" loading="lazy" alt="audi rs7 sportback performance" /> 
+<a name=audirs7sportbackperformance.webp><p>Prompt : audi rs7 sportback performance</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirs7sportback.webp" loading="lazy" alt="audi rs7 sportback" /> 
+<a name=audirs7sportback.webp><p>Prompt : audi rs7 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audirsqconcept.webp" loading="lazy" alt="audi rsq concept" /> 
+<a name=audirsqconcept.webp><p>Prompt : audi rsq concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis1hoonitronconcept.webp" loading="lazy" alt="audi s1 hoonitron concept" /> 
+<a name=audis1hoonitronconcept.webp><p>Prompt : audi s1 hoonitron concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis1sportback.webp" loading="lazy" alt="audi s1 sportback" /> 
+<a name=audis1sportback.webp><p>Prompt : audi s1 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis1.webp" loading="lazy" alt="audi s1" /> 
+<a name=audis1.webp><p>Prompt : audi s1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis3cabriolet.webp" loading="lazy" alt="audi s3 cabriolet" /> 
+<a name=audis3cabriolet.webp><p>Prompt : audi s3 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis3sedan.webp" loading="lazy" alt="audi s3 sedan" /> 
+<a name=audis3sedan.webp><p>Prompt : audi s3 sedan</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis3sportback.webp" loading="lazy" alt="audi s3 sportback" /> 
+<a name=audis3sportback.webp><p>Prompt : audi s3 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis3.webp" loading="lazy" alt="audi s3" /> 
+<a name=audis3.webp><p>Prompt : audi s3</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis4avanttdi.webp" loading="lazy" alt="audi s4 avant tdi" /> 
+<a name=audis4avanttdi.webp><p>Prompt : audi s4 avant tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis4avant.webp" loading="lazy" alt="audi s4 avant" /> 
+<a name=audis4avant.webp><p>Prompt : audi s4 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis4cabriolet.webp" loading="lazy" alt="audi s4 cabriolet" /> 
+<a name=audis4cabriolet.webp><p>Prompt : audi s4 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis4tdi.webp" loading="lazy" alt="audi s4 tdi" /> 
+<a name=audis4tdi.webp><p>Prompt : audi s4 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis4.webp" loading="lazy" alt="audi s4" /> 
+<a name=audis4.webp><p>Prompt : audi s4</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5cabriolettfsi.webp" loading="lazy" alt="audi s5 cabriolet tfsi" /> 
+<a name=audis5cabriolettfsi.webp><p>Prompt : audi s5 cabriolet tfsi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5cabriolet.webp" loading="lazy" alt="audi s5 cabriolet" /> 
+<a name=audis5cabriolet.webp><p>Prompt : audi s5 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5coupetdi.webp" loading="lazy" alt="audi s5 coupe tdi" /> 
+<a name=audis5coupetdi.webp><p>Prompt : audi s5 coupe tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5coupe.webp" loading="lazy" alt="audi s5 coupe" /> 
+<a name=audis5coupe.webp><p>Prompt : audi s5 coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5sportbacktdi.webp" loading="lazy" alt="audi s5 sportback tdi" /> 
+<a name=audis5sportbacktdi.webp><p>Prompt : audi s5 sportback tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5sportback[us].webp" loading="lazy" alt="audi s5 sportback [us]" /> 
+<a name=audis5sportback[us].webp><p>Prompt : audi s5 sportback [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5sportback.webp" loading="lazy" alt="audi s5 sportback" /> 
+<a name=audis5sportback.webp><p>Prompt : audi s5 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis5.webp" loading="lazy" alt="audi s5" /> 
+<a name=audis5.webp><p>Prompt : audi s5</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis6avanttdi.webp" loading="lazy" alt="audi s6 avant tdi" /> 
+<a name=audis6avanttdi.webp><p>Prompt : audi s6 avant tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis6avant.webp" loading="lazy" alt="audi s6 avant" /> 
+<a name=audis6avant.webp><p>Prompt : audi s6 avant</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis6sedantdi.webp" loading="lazy" alt="audi s6 sedan tdi" /> 
+<a name=audis6sedantdi.webp><p>Prompt : audi s6 sedan tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis6[us].webp" loading="lazy" alt="audi s6 [us]" /> 
+<a name=audis6[us].webp><p>Prompt : audi s6 [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis6.webp" loading="lazy" alt="audi s6" /> 
+<a name=audis6.webp><p>Prompt : audi s6</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis7sportbacktdi.webp" loading="lazy" alt="audi s7 sportback tdi" /> 
+<a name=audis7sportbacktdi.webp><p>Prompt : audi s7 sportback tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis7sportback.webp" loading="lazy" alt="audi s7 sportback" /> 
+<a name=audis7sportback.webp><p>Prompt : audi s7 sportback</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis8plus.webp" loading="lazy" alt="audi s8 plus" /> 
+<a name=audis8plus.webp><p>Prompt : audi s8 plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis8[uk].webp" loading="lazy" alt="audi s8 [uk]" /> 
+<a name=audis8[uk].webp><p>Prompt : audi s8 [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis8[us].webp" loading="lazy" alt="audi s8 [us]" /> 
+<a name=audis8[us].webp><p>Prompt : audi s8 [us]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audis8.webp" loading="lazy" alt="audi s8" /> 
+<a name=audis8.webp><p>Prompt : audi s8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audishootingbrakeconcept.webp" loading="lazy" alt="audi shooting brake concept" /> 
+<a name=audishootingbrakeconcept.webp><p>Prompt : audi shooting brake concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiskysphereconcept.webp" loading="lazy" alt="audi skysphere concept" /> 
+<a name=audiskysphereconcept.webp><p>Prompt : audi skysphere concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisportquattroconcept.webp" loading="lazy" alt="audi sport quattro concept" /> 
+<a name=audisportquattroconcept.webp><p>Prompt : audi sport quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisportquattrolaserlightconcept.webp" loading="lazy" alt="audi sport quattro laserlight concept" /> 
+<a name=audisportquattrolaserlightconcept.webp><p>Prompt : audi sport quattro laserlight concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisportquattros1.webp" loading="lazy" alt="audi sport quattro s1" /> 
+<a name=audisportquattros1.webp><p>Prompt : audi sport quattro s1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisportquattro.webp" loading="lazy" alt="audi sport quattro" /> 
+<a name=audisportquattro.webp><p>Prompt : audi sport quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisportbackconcept.webp" loading="lazy" alt="audi sportback concept" /> 
+<a name=audisportbackconcept.webp><p>Prompt : audi sportback concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq2.webp" loading="lazy" alt="audi sq2" /> 
+<a name=audisq2.webp><p>Prompt : audi sq2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq53.0tfsi.webp" loading="lazy" alt="audi sq5 3.0 tfsi" /> 
+<a name=audisq53.0tfsi.webp><p>Prompt : audi sq5 3.0 tfsi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq5sportbacktdi.webp" loading="lazy" alt="audi sq5 sportback tdi" /> 
+<a name=audisq5sportbacktdi.webp><p>Prompt : audi sq5 sportback tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq5sportback[uk].webp" loading="lazy" alt="audi sq5 sportback [uk]" /> 
+<a name=audisq5sportback[uk].webp><p>Prompt : audi sq5 sportback [uk]</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq5tdiplus.webp" loading="lazy" alt="audi sq5 tdi plus" /> 
+<a name=audisq5tdiplus.webp><p>Prompt : audi sq5 tdi plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq5tdi.webp" loading="lazy" alt="audi sq5 tdi" /> 
+<a name=audisq5tdi.webp><p>Prompt : audi sq5 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq7tdi.webp" loading="lazy" alt="audi sq7 tdi" /> 
+<a name=audisq7tdi.webp><p>Prompt : audi sq7 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq7tfsi.webp" loading="lazy" alt="audi sq7 tfsi" /> 
+<a name=audisq7tfsi.webp><p>Prompt : audi sq7 tfsi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq8tdi.webp" loading="lazy" alt="audi sq8 tdi" /> 
+<a name=audisq8tdi.webp><p>Prompt : audi sq8 tdi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisq8tfsi.webp" loading="lazy" alt="audi sq8 tfsi" /> 
+<a name=audisq8tfsi.webp><p>Prompt : audi sq8 tfsi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audisteppenwolfconcept.webp" loading="lazy" alt="audi steppenwolf concept" /> 
+<a name=audisteppenwolfconcept.webp><p>Prompt : audi steppenwolf concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/auditt3.2dsgquattro.webp" loading="lazy" alt="audi tt 3.2 dsg quattro" /> 
+<a name=auditt3.2dsgquattro.webp><p>Prompt : audi tt 3.2 dsg quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittclubsportquattroconcept.webp" loading="lazy" alt="audi tt clubsport quattro concept" /> 
+<a name=audittclubsportquattroconcept.webp><p>Prompt : audi tt clubsport quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittclubsportturboconcept.webp" loading="lazy" alt="audi tt clubsport turbo concept" /> 
+<a name=audittclubsportturboconcept.webp><p>Prompt : audi tt clubsport turbo concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupe1.8t.webp" loading="lazy" alt="audi tt coupe 1.8t" /> 
+<a name=audittcoupe1.8t.webp><p>Prompt : audi tt coupe 1.8t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupe3.2.webp" loading="lazy" alt="audi tt coupe 3.2" /> 
+<a name=audittcoupe3.2.webp><p>Prompt : audi tt coupe 3.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupebronzeselection.webp" loading="lazy" alt="audi tt coupe bronze selection" /> 
+<a name=audittcoupebronzeselection.webp><p>Prompt : audi tt coupe bronze selection</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupeconcept.webp" loading="lazy" alt="audi tt coupe concept" /> 
+<a name=audittcoupeconcept.webp><p>Prompt : audi tt coupe concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupeslinecompetition.webp" loading="lazy" alt="audi tt coupe s line competition" /> 
+<a name=audittcoupeslinecompetition.webp><p>Prompt : audi tt coupe s line competition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupes-line.webp" loading="lazy" alt="audi tt coupe s-line" /> 
+<a name=audittcoupes-line.webp><p>Prompt : audi tt coupe s-line</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittcoupe.webp" loading="lazy" alt="audi tt coupe" /> 
+<a name=audittcoupe.webp><p>Prompt : audi tt coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittgt4concept.webp" loading="lazy" alt="audi tt gt4 concept" /> 
+<a name=audittgt4concept.webp><p>Prompt : audi tt gt4 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittoffroadconcept.webp" loading="lazy" alt="audi tt offroad concept" /> 
+<a name=audittoffroadconcept.webp><p>Prompt : audi tt offroad concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittquattrosportconcept.webp" loading="lazy" alt="audi tt quattro sport concept" /> 
+<a name=audittquattrosportconcept.webp><p>Prompt : audi tt quattro sport concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittquattrosport.webp" loading="lazy" alt="audi tt quattro sport" /> 
+<a name=audittquattrosport.webp><p>Prompt : audi tt quattro sport</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadster1.8t.webp" loading="lazy" alt="audi tt roadster 1.8t" /> 
+<a name=audittroadster1.8t.webp><p>Prompt : audi tt roadster 1.8t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadster2.0tfsi.webp" loading="lazy" alt="audi tt roadster 2.0 tfsi" /> 
+<a name=audittroadster2.0tfsi.webp><p>Prompt : audi tt roadster 2.0 tfsi</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadster20yearsedition.webp" loading="lazy" alt="audi tt roadster 20 years edition" /> 
+<a name=audittroadster20yearsedition.webp><p>Prompt : audi tt roadster 20 years edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadster3.2quattro.webp" loading="lazy" alt="audi tt roadster 3.2 quattro" /> 
+<a name=audittroadster3.2quattro.webp><p>Prompt : audi tt roadster 3.2 quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadster3.2.webp" loading="lazy" alt="audi tt roadster 3.2" /> 
+<a name=audittroadster3.2.webp><p>Prompt : audi tt roadster 3.2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadsterbronzeselection.webp" loading="lazy" alt="audi tt roadster bronze selection" /> 
+<a name=audittroadsterbronzeselection.webp><p>Prompt : audi tt roadster bronze selection</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadsterhardtop.webp" loading="lazy" alt="audi tt roadster hardtop" /> 
+<a name=audittroadsterhardtop.webp><p>Prompt : audi tt roadster hardtop</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadsterslinecompetition.webp" loading="lazy" alt="audi tt roadster s line competition" /> 
+<a name=audittroadsterslinecompetition.webp><p>Prompt : audi tt roadster s line competition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittroadster.webp" loading="lazy" alt="audi tt roadster" /> 
+<a name=audittroadster.webp><p>Prompt : audi tt roadster</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittrs40yearsofquattroedition.webp" loading="lazy" alt="audi tt rs 40 years of quattro edition" /> 
+<a name=audittrs40yearsofquattroedition.webp><p>Prompt : audi tt rs 40 years of quattro edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittrscoupe.webp" loading="lazy" alt="audi tt rs coupe" /> 
+<a name=audittrscoupe.webp><p>Prompt : audi tt rs coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittrsperformanceparts.webp" loading="lazy" alt="audi tt rs performance parts" /> 
+<a name=audittrsperformanceparts.webp><p>Prompt : audi tt rs performance parts</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittrsplus.webp" loading="lazy" alt="audi tt rs plus" /> 
+<a name=audittrsplus.webp><p>Prompt : audi tt rs plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittrsroadster.webp" loading="lazy" alt="audi tt rs roadster" /> 
+<a name=audittrsroadster.webp><p>Prompt : audi tt rs roadster</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittrs.webp" loading="lazy" alt="audi tt rs" /> 
+<a name=audittrs.webp><p>Prompt : audi tt rs</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittsportbackconcept.webp" loading="lazy" alt="audi tt sportback concept" /> 
+<a name=audittsportbackconcept.webp><p>Prompt : audi tt sportback concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittultraquattroconcept.webp" loading="lazy" alt="audi tt ultra quattro concept" /> 
+<a name=audittultraquattroconcept.webp><p>Prompt : audi tt ultra quattro concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittsconcept.webp" loading="lazy" alt="audi tts concept" /> 
+<a name=audittsconcept.webp><p>Prompt : audi tts concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittscoupecompetitionplus.webp" loading="lazy" alt="audi tts coupe competition plus" /> 
+<a name=audittscoupecompetitionplus.webp><p>Prompt : audi tts coupe competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittscoupecompetition.webp" loading="lazy" alt="audi tts coupe competition" /> 
+<a name=audittscoupecompetition.webp><p>Prompt : audi tts coupe competition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittscoupe.webp" loading="lazy" alt="audi tts coupe" /> 
+<a name=audittscoupe.webp><p>Prompt : audi tts coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittsroadstercompetitionplus.webp" loading="lazy" alt="audi tts roadster competition plus" /> 
+<a name=audittsroadstercompetitionplus.webp><p>Prompt : audi tts roadster competition plus</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittsroadstercompetition.webp" loading="lazy" alt="audi tts roadster competition" /> 
+<a name=audittsroadstercompetition.webp><p>Prompt : audi tts roadster competition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audittsroadster.webp" loading="lazy" alt="audi tts roadster" /> 
+<a name=audittsroadster.webp><p>Prompt : audi tts roadster</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiuniontypec.webp" loading="lazy" alt="audi union type c" /> 
+<a name=audiuniontypec.webp><p>Prompt : audi union type c</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiurbanconcept.webp" loading="lazy" alt="audi urban concept" /> 
+<a name=audiurbanconcept.webp><p>Prompt : audi urban concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiurbanspyderconcept.webp" loading="lazy" alt="audi urban spyder concept" /> 
+<a name=audiurbanspyderconcept.webp><p>Prompt : audi urban spyder concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiurbansphereconcept.webp" loading="lazy" alt="audi urbansphere concept" /> 
+<a name=audiurbansphereconcept.webp><p>Prompt : audi urbansphere concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiv8.webp" loading="lazy" alt="audi v8" /> 
+<a name=audiv8.webp><p>Prompt : audi v8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/audiv8lquattro.webp" loading="lazy" alt="audi v8l quattro" /> 
+<a name=audiv8lquattro.webp><p>Prompt : audi v8l quattro</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bacmonor.webp" loading="lazy" alt="bac mono r" /> 
+<a name=bacmonor.webp><p>Prompt : bac mono r</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bacmono.webp" loading="lazy" alt="bac mono" /> 
+<a name=bacmono.webp><p>Prompt : bac mono</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentley6.5litre.webp" loading="lazy" alt="bentley 6.5 litre" /> 
+<a name=bentley6.5litre.webp><p>Prompt : bentley 6.5 litre</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnagebluetrainseries.webp" loading="lazy" alt="bentley arnage blue train series" /> 
+<a name=bentleyarnagebluetrainseries.webp><p>Prompt : bentley arnage blue train series</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnagedropheadcoupe.webp" loading="lazy" alt="bentley arnage drophead coupe" /> 
+<a name=bentleyarnagedropheadcoupe.webp><p>Prompt : bentley arnage drophead coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnagefinalseries.webp" loading="lazy" alt="bentley arnage final series" /> 
+<a name=bentleyarnagefinalseries.webp><p>Prompt : bentley arnage final series</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnagelimousine.webp" loading="lazy" alt="bentley arnage limousine" /> 
+<a name=bentleyarnagelimousine.webp><p>Prompt : bentley arnage limousine</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnager.webp" loading="lazy" alt="bentley arnage r" /> 
+<a name=bentleyarnager.webp><p>Prompt : bentley arnage r</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnageredlabel.webp" loading="lazy" alt="bentley arnage red label" /> 
+<a name=bentleyarnageredlabel.webp><p>Prompt : bentley arnage red label</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnaget.webp" loading="lazy" alt="bentley arnage t" /> 
+<a name=bentleyarnaget.webp><p>Prompt : bentley arnage t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyarnage.webp" loading="lazy" alt="bentley arnage" /> 
+<a name=bentleyarnage.webp><p>Prompt : bentley arnage</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyazurefinalseries.webp" loading="lazy" alt="bentley azure final series" /> 
+<a name=bentleyazurefinalseries.webp><p>Prompt : bentley azure final series</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyazuret.webp" loading="lazy" alt="bentley azure t" /> 
+<a name=bentleyazuret.webp><p>Prompt : bentley azure t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyazure.webp" loading="lazy" alt="bentley azure" /> 
+<a name=bentleyazure.webp><p>Prompt : bentley azure</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygadiesel.webp" loading="lazy" alt="bentley bentayga diesel" /> 
+<a name=bentleybentaygadiesel.webp><p>Prompt : bentley bentayga diesel</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygaewb.webp" loading="lazy" alt="bentley bentayga ewb" /> 
+<a name=bentleybentaygaewb.webp><p>Prompt : bentley bentayga ewb</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygahybrid.webp" loading="lazy" alt="bentley bentayga hybrid" /> 
+<a name=bentleybentaygahybrid.webp><p>Prompt : bentley bentayga hybrid</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygamulliner.webp" loading="lazy" alt="bentley bentayga mulliner" /> 
+<a name=bentleybentaygamulliner.webp><p>Prompt : bentley bentayga mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygas.webp" loading="lazy" alt="bentley bentayga s" /> 
+<a name=bentleybentaygas.webp><p>Prompt : bentley bentayga s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygaspeedspaceedition.webp" loading="lazy" alt="bentley bentayga speed space edition" /> 
+<a name=bentleybentaygaspeedspaceedition.webp><p>Prompt : bentley bentayga speed space edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygaspeed.webp" loading="lazy" alt="bentley bentayga speed" /> 
+<a name=bentleybentaygaspeed.webp><p>Prompt : bentley bentayga speed</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentaygav8.webp" loading="lazy" alt="bentley bentayga v8" /> 
+<a name=bentleybentaygav8.webp><p>Prompt : bentley bentayga v8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybentayga.webp" loading="lazy" alt="bentley bentayga" /> 
+<a name=bentleybentayga.webp><p>Prompt : bentley bentayga</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleybrooklands.webp" loading="lazy" alt="bentley brooklands" /> 
+<a name=bentleybrooklands.webp><p>Prompt : bentley brooklands</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalflyingspurseries51.webp" loading="lazy" alt="bentley continental flying spur series 51" /> 
+<a name=bentleycontinentalflyingspurseries51.webp><p>Prompt : bentley continental flying spur series 51</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalflyingspurspeed.webp" loading="lazy" alt="bentley continental flying spur speed" /> 
+<a name=bentleycontinentalflyingspurspeed.webp><p>Prompt : bentley continental flying spur speed</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalflyingspur.webp" loading="lazy" alt="bentley continental flying spur" /> 
+<a name=bentleycontinentalflyingspur.webp><p>Prompt : bentley continental flying spur</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalflyingstar.webp" loading="lazy" alt="bentley continental flying star" /> 
+<a name=bentleycontinentalflyingstar.webp><p>Prompt : bentley continental flying star</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtconvertiblegaleneedition.webp" loading="lazy" alt="bentley continental gt convertible galene edition" /> 
+<a name=bentleycontinentalgtconvertiblegaleneedition.webp><p>Prompt : bentley continental gt convertible galene edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtconvertible.webp" loading="lazy" alt="bentley continental gt convertible" /> 
+<a name=bentleycontinentalgtconvertible.webp><p>Prompt : bentley continental gt convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtmullinerconvertible.webp" loading="lazy" alt="bentley continental gt mulliner convertible" /> 
+<a name=bentleycontinentalgtmullinerconvertible.webp><p>Prompt : bentley continental gt mulliner convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtmulliner.webp" loading="lazy" alt="bentley continental gt mulliner" /> 
+<a name=bentleycontinentalgtmulliner.webp><p>Prompt : bentley continental gt mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtnumber9editionbymulliner.webp" loading="lazy" alt="bentley continental gt number 9 edition by mulliner" /> 
+<a name=bentleycontinentalgtnumber9editionbymulliner.webp><p>Prompt : bentley continental gt number 9 edition by mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtpikespeak.webp" loading="lazy" alt="bentley continental gt pikes peak" /> 
+<a name=bentleycontinentalgtpikespeak.webp><p>Prompt : bentley continental gt pikes peak</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtprototype.webp" loading="lazy" alt="bentley continental gt prototype" /> 
+<a name=bentleycontinentalgtprototype.webp><p>Prompt : bentley continental gt prototype</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtspeedblackedition.webp" loading="lazy" alt="bentley continental gt speed black edition" /> 
+<a name=bentleycontinentalgtspeedblackedition.webp><p>Prompt : bentley continental gt speed black edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtspeedbreitlingjetteamseries.webp" loading="lazy" alt="bentley continental gt speed breitling jet team series" /> 
+<a name=bentleycontinentalgtspeedbreitlingjetteamseries.webp><p>Prompt : bentley continental gt speed breitling jet team series</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtspeedconvertible.webp" loading="lazy" alt="bentley continental gt speed convertible" /> 
+<a name=bentleycontinentalgtspeedconvertible.webp><p>Prompt : bentley continental gt speed convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtspeed.webp" loading="lazy" alt="bentley continental gt speed" /> 
+<a name=bentleycontinentalgtspeed.webp><p>Prompt : bentley continental gt speed</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtv8convertible.webp" loading="lazy" alt="bentley continental gt v8 convertible" /> 
+<a name=bentleycontinentalgtv8convertible.webp><p>Prompt : bentley continental gt v8 convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtv8equinoxedition.webp" loading="lazy" alt="bentley continental gt v8 equinox edition" /> 
+<a name=bentleycontinentalgtv8equinoxedition.webp><p>Prompt : bentley continental gt v8 equinox edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtv8sconvertible.webp" loading="lazy" alt="bentley continental gt v8 s convertible" /> 
+<a name=bentleycontinentalgtv8sconvertible.webp><p>Prompt : bentley continental gt v8 s convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtv8s.webp" loading="lazy" alt="bentley continental gt v8 s" /> 
+<a name=bentleycontinentalgtv8s.webp><p>Prompt : bentley continental gt v8 s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtv8.webp" loading="lazy" alt="bentley continental gt v8" /> 
+<a name=bentleycontinentalgtv8.webp><p>Prompt : bentley continental gt v8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtw12lemansedition.webp" loading="lazy" alt="bentley continental gt w12 le mans edition" /> 
+<a name=bentleycontinentalgtw12lemansedition.webp><p>Prompt : bentley continental gt w12 le mans edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgt.webp" loading="lazy" alt="bentley continental gt" /> 
+<a name=bentleycontinentalgt.webp><p>Prompt : bentley continental gt</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgt3concept.webp" loading="lazy" alt="bentley continental gt3 concept" /> 
+<a name=bentleycontinentalgt3concept.webp><p>Prompt : bentley continental gt3 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgt3pikespeak.webp" loading="lazy" alt="bentley continental gt3 pikes peak" /> 
+<a name=bentleycontinentalgt3pikespeak.webp><p>Prompt : bentley continental gt3 pikes peak</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgt3racecar.webp" loading="lazy" alt="bentley continental gt3 racecar" /> 
+<a name=bentleycontinentalgt3racecar.webp><p>Prompt : bentley continental gt3 racecar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgt3-r.webp" loading="lazy" alt="bentley continental gt3-r" /> 
+<a name=bentleycontinentalgt3-r.webp><p>Prompt : bentley continental gt3-r</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtcs.webp" loading="lazy" alt="bentley continental gtc s" /> 
+<a name=bentleycontinentalgtcs.webp><p>Prompt : bentley continental gtc s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtcspeed.webp" loading="lazy" alt="bentley continental gtc speed" /> 
+<a name=bentleycontinentalgtcspeed.webp><p>Prompt : bentley continental gtc speed</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtcv8.webp" loading="lazy" alt="bentley continental gtc v8" /> 
+<a name=bentleycontinentalgtcv8.webp><p>Prompt : bentley continental gtc v8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalgtc.webp" loading="lazy" alt="bentley continental gtc" /> 
+<a name=bentleycontinentalgtc.webp><p>Prompt : bentley continental gtc</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalrmulliner.webp" loading="lazy" alt="bentley continental r mulliner" /> 
+<a name=bentleycontinentalrmulliner.webp><p>Prompt : bentley continental r mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalr.webp" loading="lazy" alt="bentley continental r" /> 
+<a name=bentleycontinentalr.webp><p>Prompt : bentley continental r</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalsupersportsconvertible.webp" loading="lazy" alt="bentley continental supersports convertible" /> 
+<a name=bentleycontinentalsupersportsconvertible.webp><p>Prompt : bentley continental supersports convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalsupersports.webp" loading="lazy" alt="bentley continental supersports" /> 
+<a name=bentleycontinentalsupersports.webp><p>Prompt : bentley continental supersports</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycontinentalt.webp" loading="lazy" alt="bentley continental t" /> 
+<a name=bentleycontinentalt.webp><p>Prompt : bentley continental t</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleycorniche.webp" loading="lazy" alt="bentley corniche" /> 
+<a name=bentleycorniche.webp><p>Prompt : bentley corniche</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyembiricos.webp" loading="lazy" alt="bentley embiricos" /> 
+<a name=bentleyembiricos.webp><p>Prompt : bentley embiricos</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyexp10speed6concept.webp" loading="lazy" alt="bentley exp 10 speed 6 concept" /> 
+<a name=bentleyexp10speed6concept.webp><p>Prompt : bentley exp 10 speed 6 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyexp100gtconcept.webp" loading="lazy" alt="bentley exp 100 gt concept" /> 
+<a name=bentleyexp100gtconcept.webp><p>Prompt : bentley exp 100 gt concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyexp12speed6econcept.webp" loading="lazy" alt="bentley exp 12 speed 6e concept" /> 
+<a name=bentleyexp12speed6econcept.webp><p>Prompt : bentley exp 12 speed 6e concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyexp9fconcept.webp" loading="lazy" alt="bentley exp 9 f concept" /> 
+<a name=bentleyexp9fconcept.webp><p>Prompt : bentley exp 9 f concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyexpspeed8.webp" loading="lazy" alt="bentley exp speed 8" /> 
+<a name=bentleyexpspeed8.webp><p>Prompt : bentley exp speed 8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurfirstedition.webp" loading="lazy" alt="bentley flying spur first edition" /> 
+<a name=bentleyflyingspurfirstedition.webp><p>Prompt : bentley flying spur first edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurhybridodysseanedition.webp" loading="lazy" alt="bentley flying spur hybrid odyssean edition" /> 
+<a name=bentleyflyingspurhybridodysseanedition.webp><p>Prompt : bentley flying spur hybrid odyssean edition</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurhybrid.webp" loading="lazy" alt="bentley flying spur hybrid" /> 
+<a name=bentleyflyingspurhybrid.webp><p>Prompt : bentley flying spur hybrid</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurmulliner.webp" loading="lazy" alt="bentley flying spur mulliner" /> 
+<a name=bentleyflyingspurmulliner.webp><p>Prompt : bentley flying spur mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurs.webp" loading="lazy" alt="bentley flying spur s" /> 
+<a name=bentleyflyingspurs.webp><p>Prompt : bentley flying spur s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurspeed.webp" loading="lazy" alt="bentley flying spur speed" /> 
+<a name=bentleyflyingspurspeed.webp><p>Prompt : bentley flying spur speed</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurv8s.webp" loading="lazy" alt="bentley flying spur v8 s" /> 
+<a name=bentleyflyingspurv8s.webp><p>Prompt : bentley flying spur v8 s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurv8.webp" loading="lazy" alt="bentley flying spur v8" /> 
+<a name=bentleyflyingspurv8.webp><p>Prompt : bentley flying spur v8</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspurw12s.webp" loading="lazy" alt="bentley flying spur w12 s" /> 
+<a name=bentleyflyingspurw12s.webp><p>Prompt : bentley flying spur w12 s</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyflyingspur.webp" loading="lazy" alt="bentley flying spur" /> 
+<a name=bentleyflyingspur.webp><p>Prompt : bentley flying spur</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleygrandconvertibleconcept.webp" loading="lazy" alt="bentley grand convertible concept" /> 
+<a name=bentleygrandconvertibleconcept.webp><p>Prompt : bentley grand convertible concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleygtzzagatoconcept.webp" loading="lazy" alt="bentley gtz zagato concept" /> 
+<a name=bentleygtzzagatoconcept.webp><p>Prompt : bentley gtz zagato concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymullinerbacalar.webp" loading="lazy" alt="bentley mulliner bacalar" /> 
+<a name=bentleymullinerbacalar.webp><p>Prompt : bentley mulliner bacalar</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymullinerbatur.webp" loading="lazy" alt="bentley mulliner batur" /> 
+<a name=bentleymullinerbatur.webp><p>Prompt : bentley mulliner batur</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsanne6.75editionbymulliner.webp" loading="lazy" alt="bentley mulsanne 6.75 edition by mulliner" /> 
+<a name=bentleymulsanne6.75editionbymulliner.webp><p>Prompt : bentley mulsanne 6.75 edition by mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsannediamondjubilee.webp" loading="lazy" alt="bentley mulsanne diamond jubilee" /> 
+<a name=bentleymulsannediamondjubilee.webp><p>Prompt : bentley mulsanne diamond jubilee</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsanneewb.webp" loading="lazy" alt="bentley mulsanne ewb" /> 
+<a name=bentleymulsanneewb.webp><p>Prompt : bentley mulsanne ewb</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsannegrandlimousinebymulliner.webp" loading="lazy" alt="bentley mulsanne grand limousine by mulliner" /> 
+<a name=bentleymulsannegrandlimousinebymulliner.webp><p>Prompt : bentley mulsanne grand limousine by mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsannemulliner.webp" loading="lazy" alt="bentley mulsanne mulliner" /> 
+<a name=bentleymulsannemulliner.webp><p>Prompt : bentley mulsanne mulliner</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsannespeed.webp" loading="lazy" alt="bentley mulsanne speed" /> 
+<a name=bentleymulsannespeed.webp><p>Prompt : bentley mulsanne speed</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleymulsanne.webp" loading="lazy" alt="bentley mulsanne" /> 
+<a name=bentleymulsanne.webp><p>Prompt : bentley mulsanne</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyr-typecontinental.webp" loading="lazy" alt="bentley r-type continental" /> 
+<a name=bentleyr-typecontinental.webp><p>Prompt : bentley r-type continental</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyr-type.webp" loading="lazy" alt="bentley r-type" /> 
+<a name=bentleyr-type.webp><p>Prompt : bentley r-type</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleys1continentalflyingspur.webp" loading="lazy" alt="bentley s1 continental flying spur" /> 
+<a name=bentleys1continentalflyingspur.webp><p>Prompt : bentley s1 continental flying spur</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleys1continental.webp" loading="lazy" alt="bentley s1 continental" /> 
+<a name=bentleys1continental.webp><p>Prompt : bentley s1 continental</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleys1.webp" loading="lazy" alt="bentley s1" /> 
+<a name=bentleys1.webp><p>Prompt : bentley s1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleys2continentalflyingspur.webp" loading="lazy" alt="bentley s2 continental flying spur" /> 
+<a name=bentleys2continentalflyingspur.webp><p>Prompt : bentley s2 continental flying spur</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyspeedsix.webp" loading="lazy" alt="bentley speed six" /> 
+<a name=bentleyspeedsix.webp><p>Prompt : bentley speed six</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleystatelimousine.webp" loading="lazy" alt="bentley state limousine" /> 
+<a name=bentleystatelimousine.webp><p>Prompt : bentley state limousine</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyt1.webp" loading="lazy" alt="bentley t1" /> 
+<a name=bentleyt1.webp><p>Prompt : bentley t1</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bentleyt2.webp" loading="lazy" alt="bentley t2" /> 
+<a name=bentleyt2.webp><p>Prompt : bentley t2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bertonejaguarb99concept.webp" loading="lazy" alt="bertone jaguar b99 concept" /> 
+<a name=bertonejaguarb99concept.webp><p>Prompt : bertone jaguar b99 concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bertonejaguarb99gtconcept.webp" loading="lazy" alt="bertone jaguar b99 gt concept" /> 
+<a name=bertonejaguarb99gtconcept.webp><p>Prompt : bertone jaguar b99 gt concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw02-serie.webp" loading="lazy" alt="bmw 02-serie" /> 
+<a name=bmw02-serie.webp><p>Prompt : bmw 02-serie</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-series3-door.webp" loading="lazy" alt="bmw 1-series 3-door" /> 
+<a name=bmw1-series3-door.webp><p>Prompt : bmw 1-series 3-door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-series5-door.webp" loading="lazy" alt="bmw 1-series 5-door" /> 
+<a name=bmw1-series5-door.webp><p>Prompt : bmw 1-series 5-door</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriescabrio.webp" loading="lazy" alt="bmw 1-series cabrio" /> 
+<a name=bmw1-seriescabrio.webp><p>Prompt : bmw 1-series cabrio</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriesconvertible.webp" loading="lazy" alt="bmw 1-series convertible" /> 
+<a name=bmw1-seriesconvertible.webp><p>Prompt : bmw 1-series convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriescoupe.webp" loading="lazy" alt="bmw 1-series coupe" /> 
+<a name=bmw1-seriescoupe.webp><p>Prompt : bmw 1-series coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriesmcoupemotogpsafetycar.webp" loading="lazy" alt="bmw 1-series m coupe motogp safety car" /> 
+<a name=bmw1-seriesmcoupemotogpsafetycar.webp><p>Prompt : bmw 1-series m coupe motogp safety car</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriesmcoupe.webp" loading="lazy" alt="bmw 1-series m coupe" /> 
+<a name=bmw1-seriesmcoupe.webp><p>Prompt : bmw 1-series m coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriesmperformanceparts.webp" loading="lazy" alt="bmw 1-series m performance parts" /> 
+<a name=bmw1-seriesmperformanceparts.webp><p>Prompt : bmw 1-series m performance parts</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriesrange.webp" loading="lazy" alt="bmw 1-series range" /> 
+<a name=bmw1-seriesrange.webp><p>Prompt : bmw 1-series range</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriessedan.webp" loading="lazy" alt="bmw 1-series sedan" /> 
+<a name=bmw1-seriessedan.webp><p>Prompt : bmw 1-series sedan</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriessportline.webp" loading="lazy" alt="bmw 1-series sport line" /> 
+<a name=bmw1-seriessportline.webp><p>Prompt : bmw 1-series sport line</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriestiiconcept.webp" loading="lazy" alt="bmw 1-series tii concept" /> 
+<a name=bmw1-seriestiiconcept.webp><p>Prompt : bmw 1-series tii concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-seriesurbanline.webp" loading="lazy" alt="bmw 1-series urban line" /> 
+<a name=bmw1-seriesurbanline.webp><p>Prompt : bmw 1-series urban line</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1-series.webp" loading="lazy" alt="bmw 1-series" /> 
+<a name=bmw1-series.webp><p>Prompt : bmw 1-series</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw120d.webp" loading="lazy" alt="bmw 120d" /> 
+<a name=bmw120d.webp><p>Prompt : bmw 120d</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw120i.webp" loading="lazy" alt="bmw 120i" /> 
+<a name=bmw120i.webp><p>Prompt : bmw 120i</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw128iconvertible.webp" loading="lazy" alt="bmw 128i convertible" /> 
+<a name=bmw128iconvertible.webp><p>Prompt : bmw 128i convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw128ti.webp" loading="lazy" alt="bmw 128ti" /> 
+<a name=bmw128ti.webp><p>Prompt : bmw 128ti</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw130im-package.webp" loading="lazy" alt="bmw 130i m-package" /> 
+<a name=bmw130im-package.webp><p>Prompt : bmw 130i m-package</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw130i.webp" loading="lazy" alt="bmw 130i" /> 
+<a name=bmw130i.webp><p>Prompt : bmw 130i</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw135iconvertible.webp" loading="lazy" alt="bmw 135i convertible" /> 
+<a name=bmw135iconvertible.webp><p>Prompt : bmw 135i convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw135icoupe.webp" loading="lazy" alt="bmw 135i coupe" /> 
+<a name=bmw135icoupe.webp><p>Prompt : bmw 135i coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1500.webp" loading="lazy" alt="bmw 1500" /> 
+<a name=bmw1500.webp><p>Prompt : bmw 1500</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1600cabriolet.webp" loading="lazy" alt="bmw 1600 cabriolet" /> 
+<a name=bmw1600cabriolet.webp><p>Prompt : bmw 1600 cabriolet</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1600-2.webp" loading="lazy" alt="bmw 1600-2" /> 
+<a name=bmw1600-2.webp><p>Prompt : bmw 1600-2</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw1802touring.webp" loading="lazy" alt="bmw 1802 touring" /> 
+<a name=bmw1802touring.webp><p>Prompt : bmw 1802 touring</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriesactivetourer.webp" loading="lazy" alt="bmw 2-series active tourer" /> 
+<a name=bmw2-seriesactivetourer.webp><p>Prompt : bmw 2-series active tourer</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriesconvertiblemperformanceparts.webp" loading="lazy" alt="bmw 2-series convertible m performance parts" /> 
+<a name=bmw2-seriesconvertiblemperformanceparts.webp><p>Prompt : bmw 2-series convertible m performance parts</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriesconvertible.webp" loading="lazy" alt="bmw 2-series convertible" /> 
+<a name=bmw2-seriesconvertible.webp><p>Prompt : bmw 2-series convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriescoupewithmperformanceparts.webp" loading="lazy" alt="bmw 2-series coupe with m performance parts" /> 
+<a name=bmw2-seriescoupewithmperformanceparts.webp><p>Prompt : bmw 2-series coupe with m performance parts</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriescoupe.webp" loading="lazy" alt="bmw 2-series coupe" /> 
+<a name=bmw2-seriescoupe.webp><p>Prompt : bmw 2-series coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriesgrancoupe.webp" loading="lazy" alt="bmw 2-series gran coupe" /> 
+<a name=bmw2-seriesgrancoupe.webp><p>Prompt : bmw 2-series gran coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2-seriesgrantourer.webp" loading="lazy" alt="bmw 2-series gran tourer" /> 
+<a name=bmw2-seriesgrantourer.webp><p>Prompt : bmw 2-series gran tourer</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2000cs.webp" loading="lazy" alt="bmw 2000 cs" /> 
+<a name=bmw2000cs.webp><p>Prompt : bmw 2000 cs</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2002hommageconcept.webp" loading="lazy" alt="bmw 2002 hommage concept" /> 
+<a name=bmw2002hommageconcept.webp><p>Prompt : bmw 2002 hommage concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2002hommagepebblebeachconcept.webp" loading="lazy" alt="bmw 2002 hommage pebble beach concept" /> 
+<a name=bmw2002hommagepebblebeachconcept.webp><p>Prompt : bmw 2002 hommage pebble beach concept</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2002turbo.webp" loading="lazy" alt="bmw 2002 turbo" /> 
+<a name=bmw2002turbo.webp><p>Prompt : bmw 2002 turbo</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2002.webp" loading="lazy" alt="bmw 2002" /> 
+<a name=bmw2002.webp><p>Prompt : bmw 2002</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2002tii.webp" loading="lazy" alt="bmw 2002tii" /> 
+<a name=bmw2002tii.webp><p>Prompt : bmw 2002tii</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw218iactivetourermsport.webp" loading="lazy" alt="bmw 218i active tourer m sport" /> 
+<a name=bmw218iactivetourermsport.webp><p>Prompt : bmw 218i active tourer m sport</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw225xeactivetourer.webp" loading="lazy" alt="bmw 225xe active tourer" /> 
+<a name=bmw225xeactivetourer.webp><p>Prompt : bmw 225xe active tourer</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw225xeiperformance.webp" loading="lazy" alt="bmw 225xe iperformance" /> 
+<a name=bmw225xeiperformance.webp><p>Prompt : bmw 225xe iperformance</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw230exdriveactivetourer.webp" loading="lazy" alt="bmw 230e xdrive active tourer" /> 
+<a name=bmw230exdriveactivetourer.webp><p>Prompt : bmw 230e xdrive active tourer</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw2800cs.webp" loading="lazy" alt="bmw 2800 cs" /> 
+<a name=bmw2800cs.webp><p>Prompt : bmw 2800 cs</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3activehybrid.webp" loading="lazy" alt="bmw 3 activehybrid" /> 
+<a name=bmw3activehybrid.webp><p>Prompt : bmw 3 activehybrid</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3seriescoupe.webp" loading="lazy" alt="bmw 3 series coupe" /> 
+<a name=bmw3seriescoupe.webp><p>Prompt : bmw 3 series coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3series.webp" loading="lazy" alt="bmw 3 series" /> 
+<a name=bmw3series.webp><p>Prompt : bmw 3 series</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3-seriescompact.webp" loading="lazy" alt="bmw 3-series compact" /> 
+<a name=bmw3-seriescompact.webp><p>Prompt : bmw 3-series compact</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3-seriesconvertible.webp" loading="lazy" alt="bmw 3-series convertible" /> 
+<a name=bmw3-seriesconvertible.webp><p>Prompt : bmw 3-series convertible</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3-seriescoupe.webp" loading="lazy" alt="bmw 3-series coupe" /> 
+<a name=bmw3-seriescoupe.webp><p>Prompt : bmw 3-series coupe</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3-seriesgranturismo.webp" loading="lazy" alt="bmw 3-series gran turismo" /> 
+<a name=bmw3-seriesgranturismo.webp><p>Prompt : bmw 3-series gran turismo</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3-serieslongwheelbase.webp" loading="lazy" alt="bmw 3-series long wheelbase" /> 
+<a name=bmw3-serieslongwheelbase.webp><p>Prompt : bmw 3-series long wheelbase</p></a>
+</div>
+<div class=gallery-item>
+<img src="./images/garage/bmw3-series.webp" loading="lazy" alt="bmw 3-series" /> 
+<a name=bmw3-series.webp><p>Prompt : bmw 3-series</p></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
