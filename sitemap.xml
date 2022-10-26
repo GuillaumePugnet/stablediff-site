@@ -3,13 +3,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://stablediff.pages.dev/</loc>
-      <lastmod>2022-10-24</lastmod>
+      <lastmod>2022-10-25</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
    </url>
-      <url>
+   <url>
       <loc>https://stablediff.pages.dev/garage.html</loc>
-      <lastmod>2022-10-24</lastmod>
+      <lastmod>2022-10-26</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://stablediff.pages.dev/contact.html</loc>
+      <lastmod>2022-10-26</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
    </url>
